@@ -1,0 +1,42 @@
+@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
+.isotope_fillter {
+  margin-top: 22px;
+}
+
+.isotope_fillter li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  position: relative; /* Alt çizgi için gerekli */
+}
+
+.isotope_fillter li a {
+  font-size: 18px;
+  color: #8d9aa8;
+  font-weight: normal;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  -webkit-transition: all 400ms linear 0s;
+  -o-transition: all 400ms linear 0s;
+  transition: all 400ms linear 0s;
+  position: relative;
+  z-index: 1;
+}
+
+.isotope_fillter li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Yazının biraz altına konumlandır */
+  left: 0;
+  width: 0; /* Başlangıçta 0 genişlik */
+  height: 3px; /* Çizgi kalınlığı */
+  background-color: #549321;
+  transition: width 0.4s ease; /* Animasyon */
+  z-index: 0;
+}
+
+.isotope_fillter li:hover a::after,
+.isotope_fillter li.active a::after {
+  width: 100%; /* Hover veya active durumunda tam genişlik */
+  right: 0; /* Çizgi sağdan başlayacak */
+  left: auto;
+}
