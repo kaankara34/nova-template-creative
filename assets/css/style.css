@@ -3066,6 +3066,7 @@ a.onovo-menu-btn,
 
 .onovo-footer .footer--default {
   padding: 90px 0 30px 0;
+  
 }
 
 .onovo-footer .copyright {
@@ -3097,15 +3098,13 @@ ul.onovo-footer-menu li {
 }
 
 @media (max-width: 1024px) {
- .footer--fixed .onovo-footer {
-   max-height: 100vh;
-  overflow-y: auto; /* Taşan içeriği kaydırılabilir hale getirir */
-}
+ 
  .onovo-footer .separator{
   margin: 0;
 }
 }
 @media (max-width: 769px) {
+ 
   
   .onovo-footer .copyright {
     font-size: 16px;
@@ -3114,7 +3113,7 @@ ul.onovo-footer-menu li {
     font-size: 16px;
   }
   .onovo-footer .footer--default {
-    padding: 40px 0 30px 0;
+    padding: 100px 0 30px 0;
   }
   .onovo-footer-lnk {
     font-size: 24px;
@@ -3956,6 +3955,8 @@ ul.onovo-footer-menu li {
     bottom: 20px;
   }
 }
+
+
 
 @media (max-width: 391px) {
   .onovo-hero .title {
