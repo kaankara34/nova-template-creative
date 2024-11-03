@@ -188,7 +188,7 @@ strong {
 }
 
 .footer--fixed .wrapper {
-  padding-bottom: 90px;
+  padding-bottom: 60px;
 }
 
 .onovo-section-full {
@@ -3071,11 +3071,7 @@ a.onovo-menu-btn,
 .onovo-footer .copyright {
   font-size: 18px;
 }
-@media (max-width: 768px) {
-  .onovo-footer .copyright {
-    margin-bottom: 40px; /* gap-bottom-40 sınıfının mobildeki etkisi */
-  }
-}
+
 
 .onovo-footer .separator {
   margin: 60px 0 30px 0;
@@ -3101,16 +3097,15 @@ ul.onovo-footer-menu li {
 }
 
 @media (max-width: 1024px) {
-  .footer--fixed .wrapper {
-    padding-bottom: 80px;
-    margin-bottom: 0 !important;
-  }
-  .footer--fixed .onovo-footer,
-  .footer--sticky .onovo-footer {
-    position: relative;
-  }
+ .footer--fixed .onovo-footer {
+  overflow-y: auto; /* Taşan içeriği kaydırılabilir hale getirir */
 }
-@media (max-width: 767px) {
+ .onovo-footer .separator{
+  margin: 0;
+}
+}
+@media (max-width: 769px) {
+  
   .onovo-footer .copyright {
     font-size: 16px;
   }
@@ -3118,11 +3113,60 @@ ul.onovo-footer-menu li {
     font-size: 16px;
   }
   .onovo-footer .footer--default {
-    padding: 60px 0 30px 0;
+    padding: 40px 0 30px 0;
   }
   .onovo-footer-lnk {
     font-size: 24px;
   }
+  .onovo-footer .copyright {
+      font-size: 10px;
+    }
+   #footer-desc{
+    font-size: 14px;
+   }
+   #footer-desc h5{
+    font-size: 14px;
+    margin: 0px 0px 10px;
+   }
+
+   .onovo-footer p{
+    margin: 20px 0;
+   }
+   #footer-logo{
+    width: 80px;
+   }
+   .onovo-social-1 ul li a{
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
+   }
+}
+@media (max-width: 375px) {
+  
+  .onovo-footer .copyright {
+      font-size: 12px;
+    }
+   #footer-desc{
+    font-size: 12px;
+   }
+   #footer-desc h5{
+    font-size: 12px;
+    margin: 0px 0px 8px;
+   }
+   
+   .onovo-social-1 ul li a{
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
+   }
+
+   .onovo-footer p{
+    margin: 12px 0;
+   }
+   #footer-logo{
+    width: 80px;
+   }
+    
 }
 /*---
 	4. Hero
@@ -5869,21 +5913,8 @@ ul.onovo-footer-menu li {
 	14.1 Blog Carousel
 ---*/
 .onovo-blog-carousel .swiper-container {
-  overflow: visible;
-}
+  overflow:hidden}
 
-.onovo-blog-carousel .swiper-slide {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
-  -webkit-transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
-}
-
-.onovo-blog-carousel .swiper-slide.swiper-slide-active,
-.onovo-blog-carousel .swiper-slide.swiper-slide-active + .swiper-slide {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .onovo-blog-slide-item {
   margin-bottom: 30px;

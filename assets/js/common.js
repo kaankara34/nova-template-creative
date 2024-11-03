@@ -361,8 +361,7 @@
 		}
 		blogSwiper.parent().find('.onovo-paginations-container').append('<div class="swiper-nav-active"></div>');
 		var blogCarousel = new Swiper(blogSwiper, {
-			slidesPerView: '2',
-			noSwipingSelector: 'a',
+			slidesPerView: '3',
 			watchSlidesProgress: true,
 			watchSlidesVisibility: true,
 			loop: blogSwiper_loop,
@@ -382,9 +381,13 @@
 					slidesPerView: 1
 				},
 				1024: {
-					slidesPerView: 2,
+					slidesPerView: 3,
 				}
 			},
+			 // Sürüklemeyi etkinleştirme ayarları
+    simulateTouch: true, // Fare ile sürüklemeyi etkinleştirir
+    touchRatio: 1, // Sürükleme hassasiyeti
+    grabCursor: true, // Fare imlecini "el" simgesi yapar
 			on: {
 				slideChange: function() {
 					var current_pos = blogSwiper.parent().find('.swiper-pagination-bullet-active').position().left;
