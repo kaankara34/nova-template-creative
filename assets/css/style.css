@@ -3098,6 +3098,7 @@ ul.onovo-footer-menu li {
 
 @media (max-width: 1024px) {
  .footer--fixed .onovo-footer {
+   max-height: 100vh;
   overflow-y: auto; /* Taşan içeriği kaydırılabilir hale getirir */
 }
  .onovo-footer .separator{
