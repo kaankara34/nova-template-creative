@@ -3044,6 +3044,15 @@ a.onovo-menu-btn,
 /*---
 	3. Footer
 ---*/
+.footer-img{
+
+  height: 100px;
+  width: 120px;
+  object-fit: cover;
+}
+
+
+
 .footer--fixed .onovo-footer,
 .footer--sticky .onovo-footer {
   position: fixed;
@@ -3105,6 +3114,12 @@ ul.onovo-footer-menu li {
 }
 @media (max-width: 769px) {
  
+
+  .footer-pic-frame{
+padding-left: 13.5px; 
+padding-right: 13.5px;
+
+  }
   
   .onovo-footer .copyright {
     font-size: 16px;
@@ -3142,9 +3157,15 @@ ul.onovo-footer-menu li {
    }
 }
 @media (max-width: 375px) {
+  .footer-img{
+
+  height: 70px;
+  width: 90px;
+  
+}
   
   .onovo-footer .copyright {
-      font-size: 12px;
+      font-size: 8px;
     }
    #footer-desc{
     font-size: 12px;
@@ -3155,13 +3176,13 @@ ul.onovo-footer-menu li {
    }
    
    .onovo-social-1 ul li a{
-    height: 30px;
-    width: 30px;
-    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
    }
 
    .onovo-footer p{
-    margin: 12px 0;
+    margin: 8px 0;
    }
    #footer-logo{
     width: 80px;
