@@ -215,6 +215,9 @@ strong {
   .hide-on-mobile-extra {
     display: none;
   }
+  .title-nova {
+          font-size: 30px !important;
+        }
 }
 @media (min-width: 991px) {
   .hide-on-desktop {
@@ -5596,15 +5599,15 @@ ul.onovo-footer-menu li {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  font-size: 150px;
-  font-weight: 700;
-  line-height: 1;
-  text-shadow: 3px 3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000,
-    -3px -3px 0 #000;
+  font-size: 90px;
+  font-weight: 40;
+  line-height: 1.3;
+  color: #549222 !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .onovo-counter .num-after {
-  font-size: 75px;
+  font-size: 60px;
 }
 
 .onovo-counter .label {
@@ -5626,10 +5629,10 @@ ul.onovo-footer-menu li {
 @media (max-width: 767px) {
   .onovo-counter .num,
   .onovo-counter .num-after {
-    font-size: 80px;
+    font-size: 50px;
   }
   .onovo-counter .num-after {
-    font-size: 40px;
+    font-size: 30px;
   }
   .onovo-counter .label {
     margin: 10px 0 20px 0;
