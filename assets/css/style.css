@@ -4650,22 +4650,22 @@ ul.onovo-footer-menu li {
 .onovo-ticker-slider .title a {
   margin: 0;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 60px;
   line-height: 1.3;
-  text-shadow: 3px 3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000,
-    -3px -3px 0 #000;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 1024px) {
   .onovo-ticker-slider .title,
   .onovo-ticker-slider .title a {
-    font-size: 70px;
+    font-size: 50px;
   }
 }
 @media (max-width: 767px) {
   .onovo-ticker-slider .title,
   .onovo-ticker-slider .title a {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 /*---
@@ -5391,7 +5391,9 @@ ul.onovo-footer-menu li {
   transform: translateY(0px);
   -webkit-transform: translateY(0px);
 }
-
+.onovo-ticker-slider .swiper-slide {
+  padding-right: 30px; /* Kelimeler arası boşluğu ayarlar */
+}
 .js-reviews-carousel-navs {
   position: absolute;
   left: 0;

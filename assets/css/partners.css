@@ -33,6 +33,25 @@
   font-size: 14px;
 }
 
+.finance-card {
+  width: 200px; /* Kart genişliği */
+  height: 100px; /* Kart yüksekliği içeriğe göre */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.finance-card img {
+  height: 140px; /* Tüm logoların maksimum yüksekliği aynı olacak */
+  width: 140px; /* Genişlik, yüksekliğe göre otomatik ayarlanacak */
+  object-fit: contain; /* Logoların orantılı olarak yerleşmesini sağlar */
+  transition: transform 0.3s ease;
+}
+
+.finance-card img:hover {
+  transform: scale(1.05); /* Hover sırasında hafif büyüme efekti */
+}
+
 @media (max-width: 1024px) {
   .partners_grid {
     grid-template-columns: repeat(4, 1fr); /* Her satıra 4 kart yerleştir */
@@ -50,6 +69,14 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 14px;
+  }
+  .finance-card {
+    width: 120px; /* Kart genişliği */
+    height: 100px; /* Kart yüksekliği içeriğe göre */
+  }
+  .finance-card img {
+    height: 100px; /* Tüm logoların maksimum yüksekliği aynı olacak */
+    width: 100px; /* Genişlik, yüksekliğe göre otomatik ayarlanacak */
   }
 }
 
@@ -73,6 +100,7 @@
     color: #fff;
     font-size: 12px;
   }
+  
 }
 @media (max-width: 400px) {
   .profile-card {
@@ -92,6 +120,14 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 10px;
+  }
+  .finance-card {
+    width: 100px; /* Kart genişliği */
+    height: 80px; /* Kart yüksekliği içeriğe göre */
+  }
+  .finance-card img {
+    height: 100px; /* Tüm logoların maksimum yüksekliği aynı olacak */
+    width: 80px; /* Genişlik, yüksekliğe göre otomatik ayarlanacak */
   }
 }
 
@@ -113,5 +149,13 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 10px;
+  }
+  .finance-card {
+    width: 90px; /* Kart genişliği */
+    height: 80px; /* Kart yüksekliği içeriğe göre */
+  }
+  .finance-card img {
+    height: 80px; /* Tüm logoların maksimum yüksekliği aynı olacak */
+    width: 70px; /* Genişlik, yüksekliğe göre otomatik ayarlanacak */
   }
 }

@@ -7,7 +7,7 @@
 
 .profile img {
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
   height: auto;
   border-radius: 8px; /* Hafif yuvarlak köşeler */
   filter: grayscale(100%);
@@ -50,7 +50,6 @@
 }
 .team-member:hover, .worker-member:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover gölge */
-  transform: translateY(-5px); /* Hafif yukarı kaydırma efekti */
 }
 
 .team-member h4, .worker-member h4 {
