@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+  <title>NOVA &copy; &#8211; Manifesto</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="author" content="bslthemes" />
+
+  <!-- Fonts -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Epilogue%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900&#038;display=swap" type="text/css" media="all" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+  <!-- CSS STYLES -->
+  <link rel="stylesheet" href="assets/css/vendors/bootstrap.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/css/vendors/splitting.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/css/vendors/swiper.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/css/vendors/animate.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/css/vendors/jquery.pagepiling.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+
+ <link rel="icon" href="assets/images/nova_icon.png" />
+
+ <style>
+ .fullscreen-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* %40 şeffaf siyah */
+    z-index: 0; /* Video üzerinde, diğer içeriklerin arkasında */
+}
+.manifesto-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.manifesto-content {
+  max-width: 100%;
+  padding: 0px 150px;
+	font-size: 30px;
+}
+@media (max-width: 767px) {
+  .manifesto-content {
+   
+		padding: 0px 30px;
+		
+	font-size: 24px;
+  }
+  }
+	@media (max-width: 400px) {
+  .manifesto-content {
+		
+	font-size: 18px;
+  }
+
+  }
+
+	.scroll-down-indicator {
+    position: fixed;
+    bottom: 20%; /* iOS URL çubuğuyla çakışmaması için yukarıda */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0.8; /* Hafif şeffaflık */
+}
+
+.scroll-down-indicator .arrow {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid #fff; /* Beyaz renkte aşağıya bakan ok */
+    animation: arrowBounce 1.5s infinite ease-in-out;
+}
+
+/* Okun hareket animasyonu */
+@keyframes arrowBounce {
+    0%, 100% {
+        transform: translateY(0); /* Başlangıç pozisyonu */
+    }
+    50% {
+        transform: translateY(10px); /* Aşağıya doğru hafif kayma */
+    }
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+	<!-- Page -->
+	<div class="onovo-page">
+
+		<!-- Preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner">
+				<span class="preloader__double-bounce"></span>
+				<span class="preloader__double-bounce preloader__double-bounce--delay"></span>
+			</div>
+		</div>
+
+		 <header class="onovo-header header--white">
+        <div class="header--builder">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-6 align-self-center"
+                style="padding-left: 0 !important"
+              >
+                <!-- Logo -->
+                <div class="onovo-logo-image" style="max-width: 170px">
+                  <a href="index.html">
+                    <img
+                      class="logo--white"
+                      src="assets/images/transparant_logo.png"
+                      alt="Onovo"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-6 align-self-center align-right"
+                style="padding-right: 25px !important"
+              >
+                <!-- Menu Hamburger -->
+                <a href="#" class="onovo-menu-btn"><span></span></a>
+                <div class="onovo-menu-popup align-left">
+                  <div class="onovo-menu-overlay"></div>
+                  <div class="onovo-menu-overlay-after"></div>
+                  <div class="onovo-menu-container onovo--noscroll">
+                    <div class="container">
+                      <div class="onovo-menu">
+                        <ul class="onovo-menu-nav">
+                          <li class="current-menu-item">
+                            <a class="onovo-lnk lnk--active" href="index.html"
+                              >ANASAYFA</a
+                            >
+                          </li>
+                          <li class="dropdown-link menu-item-has-children">
+                            <a
+                              class="onovo-lnk lnk--active onovo-dropdown-toggle"
+                              href="hakkimizda.html"
+                              >NOVA</a
+                            >
+                            <i class="icon fas fa-chevron-down"></i>
+                            <ul class="sub-menu">
+                              <li>
+                                <a
+                                  class="onovo-lnk lnk--active"
+                                  href="hakkimizda.html"
+                                  >Hakkımızda</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="onovo-lnk lnk--active"
+                                  href="ekip.html"
+                                  >Ekip</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="onovo-lnk lnk--active"
+                                  href="partnerler.html"
+                                  >Partnerler</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="onovo-lnk lnk--active"
+                                  href="services.html"
+                                  >Kentsel Dönüşüm FAQs</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a
+                              class="onovo-lnk lnk--active"
+                              href="projeler.html"
+                              >PROJELER</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="onovo-lnk lnk--active"
+                              href="haberler.html"
+                              >HABERLER</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="onovo-lnk lnk--active"
+                              href="iletisim.html"
+                              >İLETİŞİM</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+		<!-- Wrapper -->
+		<div class="wrapper">
+
+			<!-- Onovo Hero Parallax -->
+			<section class="onovo-section">
+				<div class="onovo-hero-parallax js-hero-parallax" data-loop="true">
+
+					<!--slide-->
+					<div class="onovo-hero-parallax-section video-slide">
+						<video autoplay muted loop playsinline class="fullscreen-video">
+            <source src="./assets/images/insaat.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+					<div class="dark-overlay"></div>
+					</div>
+
+					<!--slide-->
+					<div class="onovo-hero-parallax-section manifesto-slide">
+						<div class="manifesto-content">
+            <p>İnşaat, büyük bir ciddiyet ve sorumluluk gerektiren bir iştir. Bu alan, yalnızca bilgi, deneyim ve uzmanlığın kesişim noktasında duran kişiler tarafından üstlenilmelidir.</p>
+          </div>
+					</div>
+
+					<div class="onovo-hero-parallax-section video-slide">
+						<video autoplay muted loop playsinline class="fullscreen-video">
+            <source src="./assets/images/ask-cesmesi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+					<div class="dark-overlay"></div>
+					</div>
+
+				<div class="onovo-hero-parallax-section manifesto-slide">
+						<div class="manifesto-content">
+            <p>Sanat tarihi ve mimariye olan derin bilgimizle, sadece beton değil, yaşam alanları inşa ediyoruz.</p>
+          </div>
+					</div>
+
+				
+
+				</div>
+			</section>
+
+		</div>
+
+	</div>
+ <div class="scroll-down-indicator">
+    <span class="arrow"></span>
+</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/swiper.js"></script>
+	<script src="assets/js/splitting.js"></script>
+	<script src="assets/js/scroll-out.js"></script>
+	<script src="assets/js/jquery.pagepiling.js"></script>
+	<script src="assets/js/jquery.easy_number_animate.js"></script>
+	<script src="assets/js/magnific-popup.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/isotope.pkgd.js"></script>
+	<script src="assets/js/common.js"></script>
+
+</body>
+</html>

@@ -1,7 +1,8 @@
 .partners_grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
+ row-gap: 40px;
+ place-items: center;
 }
 
 .profile-card {
@@ -34,18 +35,18 @@
 }
 
 .finance-card {
-  width: 200px; /* Kart genişliği */
-  height: 100px; /* Kart yüksekliği içeriğe göre */
+  width: 140px; /* Kart genişliği */
+  height: 50px; /* Kart yüksekliği içeriğe göre */
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  
 }
 
 .finance-card img {
-  height: 140px; /* Tüm logoların maksimum yüksekliği aynı olacak */
+  height: 50px; /* Tüm logoların maksimum yüksekliği aynı olacak */
   width: 140px; /* Genişlik, yüksekliğe göre otomatik ayarlanacak */
   object-fit: contain; /* Logoların orantılı olarak yerleşmesini sağlar */
   transition: transform 0.3s ease;
+  
 }
 
 .finance-card img:hover {
@@ -71,11 +72,11 @@
     font-size: 14px;
   }
   .finance-card {
-    width: 120px; /* Kart genişliği */
-    height: 100px; /* Kart yüksekliği içeriğe göre */
+    width: 100px; /* Kart genişliği */
+    height: 40px; /* Kart yüksekliği içeriğe göre */
   }
   .finance-card img {
-    height: 100px; /* Tüm logoların maksimum yüksekliği aynı olacak */
+    height: 40px; /* Tüm logoların maksimum yüksekliği aynı olacak */
     width: 100px; /* Genişlik, yüksekliğe göre otomatik ayarlanacak */
   }
 }
@@ -100,6 +101,14 @@
     color: #fff;
     font-size: 12px;
   }
+  .finance-card {
+    width: 100px; /* Kart genişliği */
+    height: 35px; /* Kart yüksekliği içeriğe göre */
+  }
+  .finance-card img {
+    height: 35px; /* Tüm logoların maksimum yüksekliği aynı olacak */
+    width: 100px; /* Genişlik, yüksekliğe göre otomatik ayarlanacak */
+  }
   
 }
 @media (max-width: 400px) {
@@ -123,10 +132,10 @@
   }
   .finance-card {
     width: 100px; /* Kart genişliği */
-    height: 80px; /* Kart yüksekliği içeriğe göre */
+    height: 25px; /* Kart yüksekliği içeriğe göre */
   }
   .finance-card img {
-    height: 100px; /* Tüm logoların maksimum yüksekliği aynı olacak */
+    height: 25px; /* Tüm logoların maksimum yüksekliği aynı olacak */
     width: 80px; /* Genişlik, yüksekliğe göre otomatik ayarlanacak */
   }
 }
@@ -152,10 +161,10 @@
   }
   .finance-card {
     width: 90px; /* Kart genişliği */
-    height: 80px; /* Kart yüksekliği içeriğe göre */
+    height: 25px; /* Kart yüksekliği içeriğe göre */
   }
   .finance-card img {
-    height: 80px; /* Tüm logoların maksimum yüksekliği aynı olacak */
+    height: 25px; /* Tüm logoların maksimum yüksekliği aynı olacak */
     width: 70px; /* Genişlik, yüksekliğe göre otomatik ayarlanacak */
   }
 }

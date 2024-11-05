@@ -38,8 +38,11 @@ html, body {
     position: fixed;
     z-index: 100;
     margin-top: -32px;
-    top: 50%;
+    bottom: 120px;           /* Alt kenara konumlandır */
+    left: 90%; 
+    transform: translateX(-50%);
     opacity: 1;
+    
 }
 #pp-nav.right {
     right: 17px;
@@ -129,3 +132,4 @@ html, body {
     overflow-y: scroll;
     height: 100%;
 }
+
