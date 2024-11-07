@@ -183,7 +183,20 @@ function createPagination() {
   paginationContainer.innerHTML = ""; // Clear existing buttons
 
   const totalPages = Math.ceil(newsData.length / newsPerPage); // Calculate total number of pages
-
+ if (currentPage > 1) {
+    const prevButton = document.createElement("a");
+    prevButton.classList.add("prev", "page-numbers");
+    prevButton.href = "#";
+    prevButton.innerHTML = `<i class="fas fa-chevron-left" style="font-size: 16px;"></i>`;
+    prevButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      currentPage--;
+      populateNews();
+      createPagination();
+      scrollToFirstNewsItem();
+    });
+    paginationContainer.appendChild(prevButton);
+  }
   for (let i = 1; i <= totalPages; i++) {
     const pageButton = document.createElement("a");
     pageButton.innerText = i;
