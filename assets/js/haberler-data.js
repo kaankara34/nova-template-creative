@@ -122,6 +122,14 @@ function populateLatestNews() {
   });
 }
 
+function scrollToFirstNewsItem() {
+  const firstNewsItem = document.querySelector(".onovo-blog-item");
+  if (firstNewsItem) {
+    const offsetTop = firstNewsItem.getBoundingClientRect().top + window.scrollY - 150; // 50 px üstüne çık
+    window.scrollTo({ top: offsetTop, behavior: "smooth" });
+  }
+}
+
 const reversedNews = [...newsData].reverse();
 // Sayfadaki blog ve kenar en son haber alanlarına haberleri ekleyen fonksiyon
 function populateNews() {
@@ -187,6 +195,7 @@ function createPagination() {
       currentPage = i;
       populateNews(); // Update the displayed news
       createPagination(); // Update pagination buttons
+      scrollToFirstNewsItem(); // İlk haber öğesine kaydır
     });
 
     paginationContainer.appendChild(pageButton);
@@ -203,6 +212,7 @@ function createPagination() {
       currentPage++;
       populateNews();
       createPagination();
+      scrollToFirstNewsItem(); // İlk haber öğesine kaydır
     });
     paginationContainer.appendChild(nextButton);
   }
