@@ -78,6 +78,7 @@ const newsData = [
     image: "assets/images/news/tac/tac-tabela.jpg",
     summary:
       "Bağdat Caddesi kentsel dönüşüm projeleri kapsamında, Feneryolu Mahallesi'nde bulunan Taç Apartmanı ile anlaşma sağlandı.",
+      readTime: "1 MIN READ",
   },
   {
     id: 9,
@@ -87,6 +88,7 @@ const newsData = [
     image: "assets/images/news/ana/ana.jpg",
     summary:
       "Bağdat Caddesi kentsel dönüşüm projeleri kapsamında, Göztepe Mahallesi'nde bulunan Ana Apartmanı ile anlaşma sağlandı.",
+      readTime: "1 MIN READ",
   },
   {
     id: 10,
@@ -96,7 +98,9 @@ const newsData = [
     image: "assets/images/news/dogu-bati/kalamis1.jpg",
     summary:
       "Doğu Batı Apartmanları için kat karşılığı noter sözleşmesi Kalamış Wyndham Otel'de gerçekleştirilen bir toplantı ile imzalandı.",
+   readTime: "1 MIN READ",
   },
+  
 ];
 
 function populateLatestNews() {
@@ -116,6 +120,7 @@ function populateLatestNews() {
         <a class="wp-block-latest-posts__post-title" href="haber-detay.html?id=${news.id}">
           ${news.title}
         </a>
+        <span class="read-time">${news.readTime}</span>
         <span class="wp-block-latest-posts__post-date">${news.date}</span>
       </li>
     `;
