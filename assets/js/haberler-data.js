@@ -121,7 +121,7 @@ function populateLatestNews() {
           ${news.title}
         </a>
         <span class="read-time"><i class="fa-solid fa-book-open"></i>${news.readTime}</span>
-        <span class="wp-block-latest-posts__post-date">${news.date}</span>
+        <span class="wp-block-latest-posts__post-date haberler-date">${news.date}</span>
       </li>
     `;
   });
