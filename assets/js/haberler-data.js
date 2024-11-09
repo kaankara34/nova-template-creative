@@ -237,3 +237,15 @@ function createPagination() {
     paginationContainer.appendChild(nextButton);
   }
 }
+
+const scrollContainer = document.querySelector('.wp-block-latest-posts__list');
+const nextSection = document.querySelector('.insta-section');
+
+// Kaydırma olayını dinliyoruz
+scrollContainer.addEventListener('scroll', () => {
+  // Kaydırma çubuğu sonuna ulaşıldığında
+  if (scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight) {
+    // Bir sonraki bölüme geçiş yapıyoruz
+    nextSection.scrollIntoView({ behavior: 'smooth' });
+  }
+});
