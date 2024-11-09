@@ -1,22 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   loadProjectDetails();
 });
-
-// Swiper'ı başlatan fonksiyonu tanımlıyoruz
-function initializeSwiper() {
-  new Swiper(".slider-for", {
-    pagination: {
-      el: ".swiper-pagination",
-      type: "progressbar",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    observer: true,
-    observeParents: true,
-  });
-}
 const projects = {
   1: {
     title: "Martı Residence",
@@ -29,6 +13,7 @@ const projects = {
     images: [
       "assets/images/marti/marti-new.jpg",
       "assets/images/marti/marti-cephe2.JPG",
+
       "assets/images/marti/marti-new2.jpg",
       "assets/images/marti/marti-new3.jpg",
       "assets/images/marti/marti-new4.jpg",
@@ -172,9 +157,9 @@ const projects = {
     ozellikler: ["Kapalı havuz", "Basket sahası", "24 saat güvenlik"],
   },
 };
-
+// Proje sıralaması dizisi
 const projectIds = Object.keys(projects);
-
+// Dinamik içerik yükleme
 function loadProjectDetails() {
   const urlParams = new URLSearchParams(window.location.search);
   const projectId = urlParams.get("proje");
@@ -182,64 +167,82 @@ function loadProjectDetails() {
     window.location.replace("proje-detay.html?proje=1");
     return;
   }
-
   if (projects[projectId]) {
     const project = projects[projectId];
+    // Slider containerlarını temizle
+    const mainSliderContainer = document.querySelector(
+      ".main-slider .slider-for .swiper-wrapper"
+    );
 
-    // Slider container'ını temizle ve lazy yükleme ekle
-    const mainSliderContainer = document.querySelector(".main-slider .slider-for .swiper-wrapper");
     mainSliderContainer.innerHTML = ""; // Temizle
 
     // Proje resimlerini slider'lara ekle
     project.images.forEach((imageSrc) => {
+      // Ana slider için resim elemanı
       const mainSlide = document.createElement("div");
       mainSlide.classList.add("swiper-slide");
-      mainSlide.innerHTML = `<img loading="lazy" src="${imageSrc}" alt="${project.title}" />`;
+      mainSlide.innerHTML = `<img src="${imageSrc}" alt="${project.title}" />`;
       mainSliderContainer.appendChild(mainSlide);
     });
-
-    // Tüm resimler yüklendiğinde Swiper'ı başlat
-    imagesLoaded(mainSliderContainer, initializeSwiper);
+    // Swiper'ı dinamik veriler yüklendikten sonra başlatıyoruz
+    var swiper = new Swiper(".slider-for", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      observer: true,
+      observeParents: true,
+    });
 
     document.querySelector(".onovo-title-1 span").innerText = project.title;
     document.querySelector(".onovo-text p").innerText = project.description;
-
-    // Proje detaylarını yükle
-    const projectInfoContainer = document.querySelector(".onovo-project-info ul");
+    // Proje detayları (Mimar, Yıl, İnşaat Alanı, Kat/Daire Sayısı)
+    const projectInfoContainer = document.querySelector(
+      ".onovo-project-info ul"
+    );
     projectInfoContainer.innerHTML = ""; // Önceki verileri temizle
 
+    // Mimari alanı varsa ekle
     if (project.arch) {
       const archElement = document.createElement("li");
       archElement.innerHTML = `<div><strong>Mimar:</strong></div><div>${project.arch}</div>`;
       projectInfoContainer.appendChild(archElement);
     }
-
+    document.title = `NOVA © - ${project.title}`;
+    // Yıl varsa ekle
     if (project.year) {
       const yearElement = document.createElement("li");
       yearElement.innerHTML = `<div><strong>Yıl:</strong></div><div>${project.year}</div>`;
       projectInfoContainer.appendChild(yearElement);
     }
 
+    // İnşaat alanı varsa ekle
     if (project.field) {
       const fieldElement = document.createElement("li");
       fieldElement.innerHTML = `<div><strong>İnşaat alanı:</strong></div><div>${project.field} m²</div>`;
       projectInfoContainer.appendChild(fieldElement);
     }
 
+    // Kat Sayısı varsa veya Daire Sayısı varsa ekle
     if (project.floor) {
       const floorElement = document.createElement("li");
       floorElement.innerHTML = `<div><strong>Kat Sayısı:</strong></div><div>${project.floor}</div>`;
       projectInfoContainer.appendChild(floorElement);
     }
-
     if (project.unitCount) {
       const unitElement = document.createElement("li");
       unitElement.innerHTML = `<div><strong>Daire Sayısı:</strong></div><div>${project.unitCount}</div>`;
       projectInfoContainer.appendChild(unitElement);
     }
+    // Dinamik URL
+    const currentUrl = window.location.href;
 
     const whatsappLink = `https://wa.me/?text=${encodeURIComponent(
-      "NOVA'nın " + project.title + " projesine göz atın. " + window.location.href
+      "NOVA'nın " + project.title + " projesine göz atın. " + currentUrl
     )}`;
     const shareElement = document.createElement("li");
     shareElement.innerHTML = `
@@ -259,22 +262,38 @@ function loadProjectDetails() {
       </div>
     `;
     projectInfoContainer.appendChild(shareElement);
-
+    // Dinamik önceki ve sonraki proje bağlantıları
     const currentProjectIndex = projectIds.indexOf(projectId);
-    const prevProjectIndex = currentProjectIndex === 0 ? projectIds.length - 1 : currentProjectIndex - 1;
-    const nextProjectIndex = currentProjectIndex === projectIds.length - 1 ? 0 : currentProjectIndex + 1;
 
+    // Eğer mevcut proje ilk projeyse, önceki proje sonuncu proje olacak
+    const prevProjectIndex =
+      currentProjectIndex === 0
+        ? projectIds.length - 1
+        : currentProjectIndex - 1;
+
+    // Eğer mevcut proje sonuncu projeyse, sonraki proje ilk proje olacak
+    const nextProjectIndex =
+      currentProjectIndex === projectIds.length - 1
+        ? 0
+        : currentProjectIndex + 1;
+
+    // Önceki proje
     const prevProjectId = projectIds[prevProjectIndex];
     const prevProjectUrl = `proje-detay.html?proje=${prevProjectId}`;
-    document.querySelector(".page-navigation__prev").setAttribute("href", prevProjectUrl);
+    document
+      .querySelector(".page-navigation__prev")
+      .setAttribute("href", prevProjectUrl);
 
+    // Sonraki proje
     const nextProjectId = projectIds[nextProjectIndex];
     const nextProjectUrl = `proje-detay.html?proje=${nextProjectId}`;
-    document.querySelector(".page-navigation__next").setAttribute("href", nextProjectUrl);
-
+    document
+      .querySelector(".page-navigation__next")
+      .setAttribute("href", nextProjectUrl);
     const ozelliklerListesi = document.getElementById("ozellikler-listesi");
     ozelliklerListesi.innerHTML = ""; // Listeyi temizle
 
+    // Eğer projede özellikler varsa bunları listele
     if (project.ozellikler && project.ozellikler.length > 0) {
       project.ozellikler.forEach((ozellik) => {
         const li = document.createElement("li");
