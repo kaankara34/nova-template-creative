@@ -239,13 +239,25 @@ function createPagination() {
 }
 
 const scrollContainer = document.querySelector('.wp-block-latest-posts__list');
-const nextSection = document.querySelector('.insta-section');
 
-// Kaydırma olayını dinliyoruz
-scrollContainer.addEventListener('scroll', () => {
-  // Kaydırma çubuğu sonuna ulaşıldığında
+// Kaydırma ve dokunma olaylarını dinleyin
+scrollContainer.addEventListener('scroll', checkScrollEnd);
+scrollContainer.addEventListener('touchmove', preventScrollAtEnd, { passive: false });
+
+function checkScrollEnd() {
+  // Kaydırma sonuna gelinip gelinmediğini kontrol edin
   if (scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight) {
-    // Bir sonraki bölüme geçiş yapıyoruz
-    nextSection.scrollIntoView({ behavior: 'smooth' });
+    // Sonuna geldiğinde engelleyici aktif olsun
+    scrollContainer.dataset.scrollEnd = 'true';
+  } else {
+    // Kaydırma sonuna ulaşılmadığında engelleyiciyi kaldır
+    scrollContainer.dataset.scrollEnd = 'false';
   }
-});
+}
+
+function preventScrollAtEnd(event) {
+  // Eğer kaydırma sonuna gelindiyse kaydırma olayını durdur
+  if (scrollContainer.dataset.scrollEnd === 'true' && event.deltaY > 0) {
+    event.preventDefault();
+  }
+}
