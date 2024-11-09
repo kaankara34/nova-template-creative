@@ -76,6 +76,7 @@ const newsData = [
     category: "Kentsel Dönüşüm",
     title: "Taç Apartmanı ile anlaşma sağlandı.",
     image: "assets/images/news/tac/tac-tabela.jpg",
+    readTime: "1 DAKİKA",
     summary:
       "Bağdat Caddesi kentsel dönüşüm projeleri kapsamında, Feneryolu Mahallesi'nde bulunan Taç Apartmanı ile anlaşma sağlandı.",
   },
@@ -85,6 +86,7 @@ const newsData = [
     category: "Kentsel Dönüşüm",
     title: "Ana Apartmanı ile anlaşma sağlandı.",
     image: "assets/images/news/ana/ana.jpg",
+    readTime: "1 DAKİKA",
     summary:
       "Bağdat Caddesi kentsel dönüşüm projeleri kapsamında, Göztepe Mahallesi'nde bulunan Ana Apartmanı ile anlaşma sağlandı.",
   },
@@ -94,6 +96,7 @@ const newsData = [
     category: "Kentsel Dönüşüm",
     title: "Doğu Batı Apartmanları Noter Sözleşmesi",
     image: "assets/images/news/dogu-bati/kalamis1.jpg",
+    readTime: "1 DAKİKA",
     summary:
       "Doğu Batı Apartmanları için kat karşılığı noter sözleşmesi Kalamış Wyndham Otel'de gerçekleştirilen bir toplantı ile imzalandı.",
   },
@@ -105,18 +108,22 @@ function populateLatestNews() {
   );
   latestNewsContainer.innerHTML = "";
   // En son 3 haberi id'ye göre azalan sırayla kenarda göster
-  const latestNews = [...newsData].sort((a, b) => b.id - a.id).slice(0, 3);
+  const latestNews = [...newsData].sort((a, b) => b.id - a.id);
 
   latestNews.forEach((news) => {
     latestNewsContainer.innerHTML += `
-      <li>
-        <div class="wp-block-latest-posts__featured-image">
+      <li class="flex-post-list">
+        <div class="wp-block-latest-posts__featured-image flex-post-left">
           <img src="${news.image}" alt="${news.title}" />
         </div>
-        <a class="wp-block-latest-posts__post-title" href="haber-detay.html?id=${news.id}">
+        <div class="flex-post-right">
+        <span class="read-cate"><i class="fa-regular fa-newspaper"style="margin-right:5px;"></i>KENTSEL DÖNÜŞÜM</span>
+        <a class="wp-block-latest-posts__post-title " href="haber-detay.html?id=${news.id}">
           ${news.title}
         </a>
-        <span class="wp-block-latest-posts__post-date">${news.date}</span>
+        <span class="read-time"><i class="fa-regular fa-hourglass-half" style="margin-right:5px;"></i>${news.readTime}</span>
+        <span class="wp-block-latest-posts__post-date sidebar-postdate">${news.date}</span>
+         </div>
       </li>
     `;
   });
