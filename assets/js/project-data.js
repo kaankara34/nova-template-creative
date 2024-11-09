@@ -181,7 +181,7 @@ function loadProjectDetails() {
       // Ana slider için resim elemanı
       const mainSlide = document.createElement("div");
       mainSlide.classList.add("swiper-slide");
-      mainSlide.innerHTML = `<img src="${imageSrc}" alt="${project.title}" />`;
+      mainSlide.innerHTML = `<img src="${imageSrc}" alt="${project.title}" loading="lazy" />`;
       mainSliderContainer.appendChild(mainSlide);
     });
     // Swiper'ı dinamik veriler yüklendikten sonra başlatıyoruz
