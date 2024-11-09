@@ -11,6 +11,7 @@ const projects = {
     floor: "12",
     field: "5600",
     images: [
+      "assets/images/marti/marti-new.webp",
       "assets/images/marti/marti-cephe2.webp",
       "assets/images/marti/marti-new2.webp",
       "assets/images/marti/marti-new3.webp",
