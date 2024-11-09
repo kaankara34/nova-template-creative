@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'SF Pro Display'; /* Font adı */
-    src: url('../fonts/SFPRODISPLAYREGULAR.woff') format('woff');
+    src: url('../fonts/SFPRODISPLAYREGULAR.woff2') format('woff2'),
+         url('../fonts/SFPRODISPLAYREGULAR.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
