@@ -13,8 +13,9 @@ const newsData = [
     category: "Kentsel Dönüşüm",
     title: "Ataşehir Barbaros 40T Kentsel Dönüşüm Toplantısı",
     image: "assets/images/news/atasehir/toplanti.jpg",
+    readTime: "1 DAKİKA",
     summary:
-      "Ataşehir'de bulunan Barbaros Mahallesi 40T adası için gerçekleştirilen kentsel dönüşüm toplantısında, Osman Kara projeyi ve vizyonunu Ataşehirli mahalle sakinlerine aktardı.",
+      "Ataşehir'de bulunan Barbaros Mahallesi 40T adası için gerçekleştirilen kentsel dönüşüm toplantısında, NOVA A.Ş yönetim kurulu, finans müdürü, hukuk bürosu ve Çamoğlu Mimarlık katılımıyla kapsamlı bir sunum yapıldı.",
   },
   {
     id: 2,
@@ -22,15 +23,17 @@ const newsData = [
     category: "Kentsel Dönüşüm",
     title: "Ataşehir'de kentsel dönüşüm için 40T adasında imzalar atıldı.",
     image: "assets/images/news/atasehir/atasehir-imza.JPG",
+    readTime: "1 DAKİKA",
     summary:
-      "Ataşehir, Barbaros Mahallesi 40T adası için imzalar Kadıköy 35. Noter'de atıldı.",
+      "Ataşehir’in Barbaros Mahallesi’nde yer alan 40T adası için önemli bir adım atıldı. Kadıköy 35. Noter'de gerçekleştirilen imza töreni, yoğun bir katılımla gerçekleşti.",
   },
   {
     id: 3,
     date: "12 Aralık 2023",
     category: "Nova Kurumsal",
-    title: "Yılın İnşaat Şirketi Ödülü Nova'ya Verildi.",
+    title: "Yılın Kentsel Dönüşüm Şirketi Ödülü NOVA A.Ş'ye Verildi.",
     image: "assets/images/news/osmankara/nova-odul.jpg",
+    readTime: "1 DAKİKA",
     summary:
       "Ankara'da düzenlenen ödül töreninde, Nova, kentsel dönüşüm projeleri ve kentsel dönüşüme katkılarından dolayı Yılın İnşaat Şirketi Ödülü'ne layık görüldü.",
   },
@@ -38,10 +41,11 @@ const newsData = [
     id: 4,
     date: "22 Aralık 2023",
     category: "Nova Kurumsal",
-    title: "Malezya Devlet Bakanları Ziyareti",
+    title: "Malezya İnşaat ve Enerji Bakanlıkları Ziyareti",
     image: "assets/images/news/osmankara/petronas.jpg",
+    readTime: "2 DAKİKA",
     summary:
-      "Osman Kara, Malezya'nın Kuala Lumpur kentinde devlet bakanları ve Petronas şirketi yönetimi ile yenilenebilir enerji ve akıllı ev teknolojileri hakkında istişarelerde bulundu; olası işbirlikleri değerlendirildi.",
+      "Türkiye Cumhuriyeti’ni temsilen OSTİM Enerji Grubu heyeti ve Yönetim Kurulu Başkanımız Osman Kara, Endonezya’nın başkenti Jakarta’da önemli temaslarda bulundu.",
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const newsData = [
     category: "Nova Kurumsal",
     title: "Endonezya Meclisi ve Bakanlığı Ziyareti",
     image: "assets/images/news/osmankara/end-meclis.jpg",
+    readTime: "2 DAKİKA",
     summary:
       "Türkiye Cumhuriyeti'ni temsil eden inşaat heyetinde yer alan Yönetim Kurulu Başkanımız Osman Kara, Endonezya'nın başkenti Jakarta'da Meclis ve Bakanlık ziyaretleri gerçekleştirdi.",
   },
@@ -56,10 +61,11 @@ const newsData = [
     id: 6,
     date: "19 Ocak 2024",
     category: "Nova Kurumsal",
-    title: "Endonezya Meclis Başkanı iade-i ziyaret gerçekleştirdi.",
+    title: "Endonezya Meclis Başkanı İstanbul'a ziyaret gerçekleştirdi.",
+    readTime: "1 DAKİKA",
     image: "assets/images/news/osmankara/rachmad_odul5.jpg",
     summary:
-      "Geçmişte Endonezya Maliye Bakanlığı görevinde bulunmuş ve şu anda Meclis Başkanı olan Sayın Rachmad Gobel, İstanbul'da Osman Kara ile bir görüşme gerçekleştirdi.",
+      "Endonezya Meclis Başkanı ve geçmişte Endonezya Ticaret Bakanlığı görevini üstlenmiş olan Sayın Rachmad Gobel, Türkiye ile Endonezya arasındaki işbirliği ilişkilerini güçlendirmek amacıyla İstanbul’a önemli bir iade-i ziyarette bulundu.",
   },
   {
     id: 7,
@@ -67,6 +73,7 @@ const newsData = [
     category: "Kentsel Dönüşüm",
     title: "Doğu ve Batı Apartmanları ile anlaşma sağlandı.",
     image: "assets/images/news/dogu-bati/dogu-bati-tabela.jpg",
+    readTime: "1 DAKİKA",
     summary:
       "Bağdat Caddesi kentsel dönüşüm projeleri kapsamında, Göztepe Mahallesi'nde bulunan Doğu ve Batı Apartmanları ile anlaşma sağlandı.",
   },

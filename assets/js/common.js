@@ -414,38 +414,7 @@
 		disableOnInteraction: true
 	});
 
-	/*
-		- Reviews Carousel
-	*/
-	$('.js-reviews-carousel').each(function() {
-		var reviewSwiper = $(this);
-		var reviewSwiper_auto_val = reviewSwiper.data('autoplay');
-		var reviewSwiper_loop = reviewSwiper.data('loop');
-		if (reviewSwiper_auto_val > 1) {
-			var reviewSwiper_auto = true;
-			reviewSwiper.find('.swiper-slide').attr('data-swiper-autoplay', reviewSwiper_auto_val);
-		} else {
-			var reviewSwiper_auto = false;
-		}
-		if (reviewSwiper_loop) {
-			reviewSwiper_loop = true;
-		} else {
-			reviewSwiper_loop = false;
-		}
-		var reviewCarousel = new Swiper(reviewSwiper, {
-			slidesPerView: 1,
-			effect: 'fade',
-			loop: reviewSwiper_loop,
-			autoplay: reviewSwiper_auto,
-			spaceBetween: 50,
-			pagination: false,
-			navigation: {
-				nextEl: '.js-reviews-carousel-next',
-				prevEl: '.js-reviews-carousel-prev',
-			}
-		});
-	});
-
+	
 	/*
 		- History Carousel
 	*/
@@ -675,47 +644,5 @@
 		Image Popup
 	**/
 	$('.mfp-image').magnificPopup();
-
-	/**
-		Validate Form
-	**/
-	if($('.cform').length) {
-		$('#cform').validate({
-			rules: {
-				name: {
-					required: true
-				},
-				tel: {
-					required: true
-				},
-				email: {
-					required: true,
-					email: true
-				},
-				message: {
-					required: true
-				}
-			},
-			success: 'valid',
-			submitHandler: function() {
-				$.ajax({
-					url: 'mailer/feedback.php',
-					type: 'post',
-					dataType: 'json',
-					data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&tel='+ $("#cform").find('input[name="tel"]').val() + '&message='+ $("#cform").find('textarea[name="message"]').val(),
-					beforeSend: function() {
-	
-					},
-					complete: function() {
-	
-					},
-					success: function(data) {
-						$('#cform').fadeOut();
-						$('.alert-success').delay(1000).fadeIn();
-					}
-				});
-			}
-		});
-	}
 
 } )( jQuery );

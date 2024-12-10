@@ -4,11 +4,11 @@ const newsData = [
     title: "Ataşehir Barbaros 40T Kentsel Dönüşüm Toplantısı",
     date: "21 Kasım 2023",
     paragraphs: [
-      "Ataşehir'de bulunan Barbaros Mahallesi 40T adası için gerçekleştirilen kentsel dönüşüm toplantısında, Osman Kara projeyi ve vizyonunu Ataşehirli mahalle sakinlerine aktardı. Toplantı, Hilton Ataşehir'de gerçekleşirken, katılım oldukça yoğundu. Mahalle sakinlerinin büyük çoğunluğu, projeyi yürütecek firma olarak Nova ile anlaşma sağlanması konusunda hemfikir oldu.",
+      "Ataşehir'de bulunan Barbaros Mahallesi 40T adası için gerçekleştirilen kentsel dönüşüm toplantısında, NOVA A.Ş yönetim kurulu, finans müdürü, hukuk bürosu ve Çamoğlu Mimarlık katılımıyla kapsamlı bir sunum yapıldı. Yönetim kurulu başkanımız Sayın Osman Kara, açılış konuşmasında projeyi ve şirket vizyonunu Ataşehirli mahalle sakinlerine aktardı. Toplantı Hilton Ataşehir'de gerçekleşti ve katılım oldukça yoğundu. Mahalle sakinlerinin büyük çoğunluğu, projeyi yürütecek firma olarak NOVA ile anlaşma sağlanması konusunda hemfikir oldu.",
     ],
 
     paragraphs2: [
-      "Toplantıda ayrıca, proje süreci ve gelecekte mahalleye katacağı değerler üzerine de tartışmalar yapıldı. Katılımcılar, Nova'nın sunduğu yenilikçi çözümler ve sosyal alanlara yönelik yatırımlarıyla projeyi destekleme eğilimindeydi.",
+      "Ayrıca toplantıda, proje süreci ve mahallenin geleceğine katacağı değerler üzerine de tartışmalar yapıldı. Katılımcılar, NOVA A.Ş'nin sunduğu yenilikçi çözümler ve sosyal alanlara yönelik yatırımlarıyla projeyi desteklediklerini ifade etti.",
     ],
     photos1: [
       "assets/images/news/atasehir/toplanti.jpg",
@@ -18,7 +18,7 @@ const newsData = [
     ],
     postPhoto: "assets/images/news/atasehir/toplanti.jpg",
     blockquote: {
-      text: "Mahalle sakinlerinin büyük çoğunluğu, projeyi yürütecek firma olarak Nova ile anlaşma sağlanması konusunda hemfikir oldu.",
+      text: "Mahalle sakinlerinin büyük çoğunluğu, projeyi yürütecek firma olarak NOVA A.Ş ile anlaşma sağlanması konusunda hemfikir oldu.",
     },
   },
   {
@@ -39,20 +39,19 @@ const newsData = [
   },
   {
     id: 3,
-    title: "Yılın İnşaat Şirketi Ödülü Nova'ya Verildi.",
+    title: "Yılın Kentsel Dönüşüm Şirketi Ödülü NOVA A.Ş'ye Verildi.",
     date: "12 Aralık 2023",
     paragraphs: [
-      "Ankara’da gerçekleştirilen prestijli bir ödül töreninde, inşaat sektörünün öncü firmalarından Nova, kentsel dönüşüm projelerine ve bu alandaki önemli katkılarına istinaden Yılın İnşaat Şirketi Ödülü'ne layık görüldü. Tören, iş dünyasından önemli isimlerin yanı sıra sektör temsilcileri ve basının geniş katılımıyla yapıldı. Nova, Ankara’da aldığı bu prestijli ödül ile inşaat sektöründe yenilikçi, sürdürülebilir ve insan odaklı projelere olan bağlılığını bir kez daha kanıtlamış oldu.",
+      "Ankara’da gerçekleştirilen 2. Uluslararası Gold Moon Awards ödül töreninde, inşaat sektörünün öncü firmalarından NOVA A.Ş., kentsel dönüşüm projeleri ve bu alandaki önemli katkıları nedeniyle \"Yılın İnşaat Şirketi Ödülü\"'ne layık görüldü. Tören, iş dünyasından önemli isimlerin yanı sıra sektör temsilcileri ve basının geniş katılımıyla gerçekleştirildi. NOVA A.Ş. adına Yönetim Kurulu Başkanımız Sayın Osman Kara'nın Ankara’da aldığı bu prestijli ödül, şirketimizin inşaat sektöründe yenilikçi, sürdürülebilir ve insan odaklı projelere olan bağlılığını bir kez daha kanıtladı.",
     ],
     postPhoto: "assets/images/news/osmankara/nova-odul.jpg",
   },
   {
     id: 4,
-    title: "Malezya Devlet Bakanları Ziyareti",
+    title: "Malezya İnşaat ve Enerji Bakanlıkları Ziyareti",
     date: "22 Aralık 2023",
     paragraphs: [
-      "Osman Kara, Malezya'nın başkenti Kuala Lumpur'da devlet bakanları ve Petronas şirketi yönetimi ile bir araya gelerek yenilenebilir enerji ve akıllı ev teknolojileri üzerine önemli istişarelerde bulundu. Yapılan görüşmelerde, hem küresel enerji dönüşümü hem de geleceğin teknolojileri hakkında karşılıklı işbirlikleri ve ortak projeler değerlendirilirken, bu alanlarda atılabilecek adımlar ele alındı. Osman Kara, toplantıda yaptığı konuşmada, \"Yenilenebilir enerji kaynaklarına geçiş, hem ekonomik büyüme hem de çevre koruma açısından hayati önem taşıyor. Petronas gibi küresel oyuncularla işbirliği yaparak, bu dönüşümü hızlandırmak ve daha sürdürülebilir bir gelecek inşa etmek istiyoruz.\" dedi.",
-      'Yenilenebilir enerji projelerinin yanı sıra, görüşmelerde akıllı ev teknolojileri de gündeme geldi. Osman Kara, bu teknolojilerin gelecekteki şehirleşme ve yaşam alanları için taşıdığı önemden bahsederek, enerji tasarrufu sağlayan, sürdürülebilir ve kullanıcı dostu akıllı ev çözümleri üzerine olası işbirlikleri konusunda Petronas yönetimi ile fikir alışverişinde bulundu. Bu teknolojilerin Malezya ve Türkiye\'deki potansiyel kullanım alanları üzerine yapılan değerlendirmeler, tarafların bu alanda inovatif projelerde işbirliği yapma ihtimalini arttırdı. Osman Kara, "Akıllı ev teknolojileri, hem yaşam kalitesini artırmak hem de enerji verimliliğini sağlamak açısından büyük bir potansiyele sahip. Bu alanda Malezya ile ortak projeler gerçekleştirmek, iki ülke arasındaki teknoloji ve bilgi paylaşımını güçlendirebilir." ifadelerini kullandı.',
+      "Yönetim Kurulu Başkanımız Sayın Osman Kara ve OSTİM Enerji Grubu, Malezya'nın başkenti Kuala Lumpur'da devlet bakanları ve Petronas şirketi yönetimi ile bir araya gelerek yenilenebilir enerji ve akıllı ev teknolojileri üzerine önemli istişarelerde bulundu. Yapılan görüşmelerde, küresel enerji dönüşümü ve geleceğin teknolojileri üzerine karşılıklı işbirlikleri ile ortak projeler değerlendirilirken, bu alanlarda atılabilecek adımlar ele alındı.Heyete bu ziyaretler sırasında Türkiye’nin Endonezya Büyükelçisi de eşlik etti. Büyükelçinin katılımı, iki ülke arasındaki diplomatik ilişkilerin güçlendirilmesi ve inşaat sektörü başta olmak üzere farklı alanlardaki işbirliklerinin geliştirilmesi açısından önemli bir adımdı. ","Yönetim Kurulu Başkanımız Sayın Osman Kara, toplantıda yaptığı konuşmada şunları ifade etti:\" Yenilenebilir enerji kaynaklarına geçiş, hem ekonomik büyüme hem de çevre koruma açısından hayati önem taşıyor. Petronas gibi küresel oyuncularla işbirliği yaparak bu dönüşümü hızlandırmak ve daha sürdürülebilir bir gelecek inşa etmek istiyoruz.\" Yenilenebilir enerji projelerinin yanı sıra, görüşmelerde akıllı ev teknolojileri de gündeme geldi. Osman Kara, bu teknolojilerin gelecekteki şehirleşme ve yaşam alanları için taşıdığı önemden bahsederek, enerji tasarrufu sağlayan, sürdürülebilir ve kullanıcı dostu akıllı ev çözümleri üzerine Petronas yönetimi ile fikir alışverişinde bulundu.Bu teknolojilerin Malezya ve Türkiye'deki potansiyel kullanım alanları üzerine yapılan değerlendirmeler, tarafların inovatif projelerde işbirliği yapma ihtimalini artırdı. Osman Kara, konuşmasında şu ifadelere yer verdi: \"Akıllı ev teknolojileri, hem yaşam kalitesini artırmak hem de enerji verimliliğini sağlamak açısından büyük bir potansiyele sahip. Bu alanda Malezya ile ortak projeler gerçekleştirmek, iki ülke arasındaki teknoloji ve bilgi paylaşımını güçlendirebilir.\"",
     ],
 
     paragraphs2: [
@@ -64,12 +63,15 @@ const newsData = [
       "assets/images/news/osmankara/malezya3.jpg",
       "assets/images/news/osmankara/malezya4.jpg",
       "assets/images/news/osmankara/petronas.jpg",
-      "assets/images/news/osmankara/end-meclis.jpg",
+      "assets/images/news/osmankara/buyukelci.png",
+       "assets/images/news/osmankara/endonezya1.jpg",
+       "assets/images/news/osmankara/endonezya2.jpg",
+      
     ],
     postPhoto: "assets/images/news/osmankara/petronas.jpg",
     blockquote: {
       text: "Yenilenebilir enerji kaynaklarına geçiş, hem ekonomik büyüme hem de çevre koruma açısından hayati önem taşıyor. Petronas gibi küresel oyuncularla işbirliği yaparak, bu dönüşümü hızlandırmak ve daha sürdürülebilir bir gelecek inşa etmek istiyoruz.",
-      author: "- Osman Kara",
+      author: "- NOVA A.Ş Yönetim Kurulu Başkanı Osman Kara",
     },
   },
   {
@@ -77,23 +79,23 @@ const newsData = [
     title: "Endonezya Meclisi ve Bakanlığı Ziyareti",
     date: "27 Aralık 2023",
     paragraphs: [
-      "Türkiye Cumhuriyeti’ni temsilen yurtdışı heyetinde yer alan Yönetim Kurulu Başkanımız Osman Kara, Endonezya’nın başkenti Jakarta’da önemli temaslarda bulundu. Osman Kara, Türkiye ve Endonezya arasındaki işbirliği olanaklarını değerlendirmek üzere, Endonezya'nın Meclis ve Bakanlık binalarını ziyaret ederek üst düzey görüşmeler gerçekleştirdi. Bu ziyaretler, iki ülke arasındaki ekonomik ve sektörel ilişkileri daha da derinleştirmek amacıyla atılmış önemli bir adım olarak değerlendirildi.",
+      "Türkiye Cumhuriyeti’ni temsilen OSTİM Enerji Grubu heyeti ve Yönetim Kurulu Başkanımız Osman Kara, Endonezya’nın başkenti Jakarta’da önemli temaslarda bulundu. Yönetim Kurulu Başkanımız Sayın Osman Kara, Türkiye ve Endonezya arasındaki işbirliği olanaklarını değerlendirmek üzere, Endonezya'nın Meclis ve Bakanlık binalarını ziyaret ederek üst düzey görüşmeler gerçekleştirdi. Bu ziyaretler, iki ülke arasındaki ekonomik ve sektörel ilişkileri daha da derinleştirmek amacıyla atılmış önemli bir adım olarak değerlendirildi.",
     ],
 
     paragraphs2: [
-      "Osman Kara’ya, bu ziyaretler sırasında Türkiye’nin Endonezya Büyükelçisi de eşlik etti. Büyükelçinin katılımı, iki ülke arasındaki diplomatik ilişkilerin güçlendirilmesi ve inşaat sektörü başta olmak üzere farklı alanlardaki işbirliklerinin geliştirilmesi açısından önemli bir adımdı. Ziyaretler sırasında, Türkiye ile Endonezya arasında mevcut projeler ve gelecek planları masaya yatırıldı, özellikle inşaat sektörü ve altyapı projeleri üzerinde duruldu.",
-      "Görüşmelerde, özellikle inşaat sektörü, altyapı projeleri ve yenilenebilir enerji gibi stratejik alanlarda yapılabilecek işbirlikleri ele alındı. Endonezya'nın hızla büyüyen ekonomisine katkı sağlayabilecek Türk firmalarının potansiyel projelere katılımı da görüşmelerin gündeminde yer aldı. Ayrıca, Osman Kara, Endonezya Meclis Başkanı Rachmad Gobel ile de ikili temaslarda bulundu. Bu görüşme, iki ülkenin arasında işbirliği olanaklarının artırılmasına yönelik önemli bir adım olarak öne çıktı. Kara ve Gobel, Türk inşaat sektörünün Endonezya'da yürütülebilecek projelere katkısını, iki ülke arasında karşılıklı bilgi paylaşımı ve teknik destek konularını detaylı olarak ele aldı. Gobel, Türkiye’nin inşaat sektöründe sahip olduğu bilgi birikiminin, Endonezya’nın büyük çaplı altyapı projelerine önemli katkılar sağlayacağını belirtti.",
+      "Ziyaretler sırasında, Türkiye ile Endonezya arasında mevcut projeler ve gelecek planları masaya yatırıldı, özellikle inşaat sektörü ve altyapı projeleri üzerinde duruldu.Görüşmelerde, özellikle inşaat sektörü, altyapı projeleri ve yenilenebilir enerji gibi stratejik alanlarda yapılabilecek işbirlikleri ele alındı. Endonezya'nın hızla büyüyen ekonomisine katkı sağlayabilecek Türk firmalarının potansiyel projelere katılımı da görüşmelerin gündeminde yer aldı. Ayrıca, Sayın Osman Kara, Endonezya Meclis Başkanı ve geçmişte Endonezya Ticaret Bakanlığı görevlerinde de bulunan Sayın Rachmad Gobel ile de ikili temaslarda bulundu. Bu görüşme, iki ülkenin arasında işbirliği olanaklarının artırılmasına yönelik önemli bir adım olarak öne çıktı. Sayın Kara ve Sayın Gobel, Türk inşaat sektörünün Endonezya'da yürütülebilecek projelere katkısını, iki ülke arasında karşılıklı bilgi paylaşımı ve teknik destek konularını detaylı olarak ele aldı. Gobel, Türkiye’nin inşaat sektöründe sahip olduğu bilgi birikiminin, Endonezya’nın büyük çaplı altyapı projelerine önemli katkılar sağlayacağını belirtti.",
     ],
     photos1: [
-      "assets/images/news/osmankara/endonezya1.jpg",
-      "assets/images/news/osmankara/endonezya2.jpg",
+     
+      
       "assets/images/news/osmankara/rachmad_end_odul.jpg",
-      "assets/images/news/osmankara/buyukelci.png",
+      
+      "assets/images/news/osmankara/end-meclis.jpg",
     ],
     postPhoto: "assets/images/news/osmankara/rachmad_end_odul.jpg",
     blockquote: {
       text: "Türkiye’nin inşaat sektöründe sahip olduğu bilgi birikimi, Endonezya’nın büyük çaplı altyapı projelerine önemli katkılar sağlayabilir.",
-      author: "- Rachmad Gobel",
+      author: "- Endonezya Meclis Başkanı Sayın Rachmad Gobel",
     },
   },
   {
@@ -101,12 +103,12 @@ const newsData = [
     title: "Endonezya Meclis Başkanı İstanbul'a ziyaret gerçekleştirdi.",
     date: "19 Ocak 2024",
     paragraphs: [
-      "Endonezya Meclis Başkanı ve geçmişte Endonezya Maliye Bakanlığı görevini üstlenmiş olan Sayın Rachmad Gobel, Türkiye ile Endonezya arasındaki işbirliği ilişkilerini güçlendirmek amacıyla İstanbul’a önemli bir iade-i ziyarette bulundu. Bu ziyaret çerçevesinde Gobel, Osman Kara ile bir araya geldi. İstanbul'da gerçekleşen bu görüşme, iki ülke arasındaki stratejik işbirliği fırsatlarını derinlemesine ele aldı.",
+      "Endonezya Meclis Başkanı ve geçmişte Endonezya Ticaret Bakanlığı görevini üstlenmiş olan Sayın Rachmad Gobel, Türkiye ile Endonezya arasındaki işbirliği ilişkilerini güçlendirmek amacıyla İstanbul’a önemli bir iade-i ziyarette bulundu. Bu ziyaret çerçevesinde Sayın Gobel ve NOVA A.Ş Yönetim Kurulu Başkanı Sayın Osman Kara bir araya geldi. İstanbul'da gerçekleşen bu görüşme, iki ülke arasındaki stratejik işbirliği fırsatlarını derinlemesine ele aldı. Ayrıca görüşmeye Endonezya Ankara Büyükelçisi Sayın Achmad Rizal Purnama' da eşlik etti.",
     ],
 
     paragraphs2: [
-      "Rachmad Gobel, Osman Kara ile yaptığı görüşmede, daha önce Endonezya’nın başkenti Jakarta’da gerçekleştirilen toplantıların devamı niteliğinde önemli mesajlar verdi. Görüşmede, iki ülkenin inşaat ve altyapı projelerinde daha fazla işbirliği yapmasının gerekliliği vurgulandı. Özellikle Türkiye’nin güçlü inşaat sektörünün, Endonezya’da planlanan büyük çaplı projelere katkı sağlaması üzerine detaylı fikir alışverişinde bulunuldu. Ayrıca Gobel, Türkiye’nin teknoloji ve mühendislik alanlarındaki birikimlerinin, Endonezya’daki altyapı gelişiminde kilit bir rol oynayabileceğini belirtti.",
-      "Görüşmelerde NOVA'nın Endonezya'da yatırım yapma potansiyeli özellikle vurgulandı. Gobel, Kara’nın öncülüğündeki NOVA ile yapılacak işbirliklerinin, Endonezya’nın altyapı ve şehirleşme süreçlerine önemli katkılar sağlayacağını belirtti. Ülkenin inşaat ve yenilenebilir enerji projeleri için güvenilir ve yenilikçi ortaklara ihtiyaç duyduğu bir dönemde, Kara’nın öncülüğündeki NOVA’nın bu boşluğu doldurabileceği belirtildi.",
+      "Sayın Rachmad Gobel, heyeti, Sayın Osman Kara ve heyeti ile yaptığı görüşmede, daha önce Endonezya’nın başkenti Jakarta’da gerçekleştirilen toplantıların devamı niteliğinde önemli mesajlar verdi. Görüşmede, iki ülkenin inşaat ve altyapı projelerinde daha fazla işbirliği yapmasının gerekliliği vurgulandı. Özellikle Türkiye’nin güçlü inşaat sektörünün, Endonezya’da planlanan büyük çaplı projelere katkı sağlaması üzerine detaylı fikir alışverişinde bulunuldu. Ayrıca Sayın Gobel, Türkiye’nin teknoloji ve mühendislik alanlarındaki birikimlerinin, Endonezya’daki altyapı gelişiminde kilit bir rol oynayabileceğini belirtti.",
+      "Görüşmelerde NOVA'nın Endonezya'da yatırım yapma potansiyeli özellikle vurgulandı. Sayın Gobel, Sayın Kara’nın öncülüğündeki NOVA A.Ş ile yapılacak işbirliklerinin, Endonezya’nın altyapı ve şehirleşme süreçlerine önemli katkılar sağlayacağını belirtti. Ülkenin inşaat ve yenilenebilir enerji projeleri için güvenilir ve yenilikçi ortaklara ihtiyaç duyduğu bir dönemde, Sayın Kara’nın öncülüğündeki NOVA A.Ş'nin bu boşluğu doldurabileceğini belirtti.",
     ],
     photos1: [
       "assets/images/news/osmankara/rachmad_odul.jpg",
@@ -118,7 +120,7 @@ const newsData = [
     postPhoto: "assets/images/news/osmankara/rachmad_odul5.jpg",
     blockquote: {
       text: "Endonezya'nın inşaat ve yenilenebilir enerji projeleri için güvenilir ve yenilikçi ortaklara ihtiyaç duyduğu bu dönemde, Sayın Kara’nın öncülüğündeki NOVA bu boşluğu doldurabilir.",
-      author: "- Rachmad Gobel",
+      author: "- Sayın Rachmad Gobel",
     },
   },
   {
@@ -126,16 +128,21 @@ const newsData = [
     title: "Doğu ve Batı Apartmanları ile anlaşma sağlandı.",
     date: "7 Nisan 2024",
     paragraphs: [
-      "Göztepe Mahallesi'nde yer alan ve Bağdat Caddesi üzerinde bulunan Doğu ve Batı Apartmanları ile kentsel dönüşüm kapsamında anlaşma sağlandı. Doğu ve Batı Apartmanları, İstanbul’un en prestijli lokasyonlarından biri olan Bağdat Caddesi üzerinde yer alıyor.Proje, depreme dayanıklı, modern yaşam alanlarının oluşturulması ve Bağdat Caddesi’nin estetik değerlerine katkı sağlama amacı taşıyor.",
+      "Göztepe Mahallesi'nde yer alan ve Bağdat Caddesi üzerinde bulunan Doğu Apartmanı ve Batı Apartmanı kentsel dönüşümde çok zor fakat değerli bir karara imza attı. İki ayrı parsel tevhid edilerek tek bir arsaya dönüştürüldü ve kat malikleri site olarak birlikte yaşama iradesini gösterdiler. NOVA A.Ş Yönetim Kurulu Başkanı Osman Kara, şu ifadeleri kullandı, \"Kadıköy bölgesinde tek bir binanın malikleri bile anlaşmakta zorluk çekerken, 46 adet malik, iki ayrı bağımsız parselde kentsel dönüşüm bilinci ile hareket ederek NOVA A.Ş ile anlaştı. NOVA A.Ş olarak bize duydukları güvenden dolayı teşekkür ediyoruz.\" dedi.  Bağdat Caddesi üzerinde yer alacak proje, depreme dayanıklı, modern yaşam alanlarının oluşturulması ve Bağdat Caddesi’nin estetik değerlerine katkı sağlama amacı taşıyor.",
     ],
+     blockquote: {
+      text: "Kadıköy bölgesinde tek bir binanın malikleri bile anlaşmakta zorluk çekerken, 46 adet malik, iki ayrı bağımsız parselde kentsel dönüşüm bilinci ile hareket ederek NOVA A.Ş ile anlaştı. NOVA A.Ş olarak bize duydukları güvenden dolayı teşekkür ediyoruz.",
+      author: "- NOVA A.Ş. Yönetim Kurulu Başkanı Osman Kara",
+    },
     postPhoto: "assets/images/news/dogu-bati/dogu-bati-tabela.jpg",
+    
   },
   {
     id: 8,
     title: "Taç Apartmanı ile anlaşma sağlandı.",
     date: "16 Mayıs 2024",
     paragraphs: [
-      "Kentsel dönüşüm projeleri çerçevesinde, Feneryolu Mahallesi'nde yer alan Taç Apartmanı ile anlaşma sağlandı. Kentsel dönüşüm projeleri, Bağdat Caddesi'ni hem depreme dayanıklı yapılarla güçlendirmeyi hem de estetik ve konforu bir araya getirerek modern bir yaşam sunmayı amaçlıyor. Taç Apartmanı da bu kapsamda yenilenerek bölgenin yeni ve çağdaş yaşam merkezlerinden biri haline gelecek.",
+      "Kentsel dönüşüm projeleri çerçevesinde, Feneryolu Mahallesi'nde yer alan Taç Apartmanı ile anlaşma sağlandı. Kentsel dönüşüm projeleri, Bağdat Caddesi'ni hem depreme dayanıklı yapılarla güçlendirmeyi hem de estetik ve konforu bir araya getirerek modern bir yaşam sunmayı amaçlıyor. Taç Apartmanı da bu kapsamda yenilenerek bölgenin yeni ve çağdaş yaşam merkezlerinden biri haline gelecek. Yönetim Kurulu Başkanı Osman Kara, \"NOVA A.Ş olarak bize duydukları güvenden dolayı teşekkür ediyoruz.\", dedi.",
     ],
     postPhoto: "assets/images/news/tac/tac-tabela.jpg",
   },
@@ -144,7 +151,7 @@ const newsData = [
     title: "Ana Apartmanı ile anlaşma sağlandı.",
     date: "11 Haziran 2024",
     paragraphs: [
-      "Bağdat Caddesi'nin kentsel dönüşüm projeleri kapsamında önemli bir adım daha atıldı. Göztepe Mahallesi'nde bulunan Ana Apartmanı ile yapılan anlaşma, bölgenin modernleşme sürecine katkı sağlayacak bir diğer önemli proje olarak öne çıkıyor. Kentsel dönüşüm sayesinde bina, modern yaşam standartlarına uygun bir şekilde yeniden inşa edilecek ve bölge halkına güvenli bir yaşam alanı sunacak.",
+      "Bağdat Caddesi'nin kentsel dönüşüm projeleri kapsamında önemli bir adım daha atıldı. Göztepe Mahallesi'nde bulunan Ana Apartmanı ile yapılan anlaşma, bölgenin modernleşme sürecine katkı sağlayacak bir diğer önemli proje olarak öne çıkıyor. Kentsel dönüşüm sayesinde bina, modern yaşam standartlarına uygun bir şekilde yeniden inşa edilecek ve bölge halkına güvenli bir yaşam alanı sunacak.Yönetim Kurulu Başkanı Sayın Osman Kara, \"NOVA A.Ş olarak bize duydukları güvenden dolayı teşekkür ediyoruz.\", dedi.",
     ],
     postPhoto: "assets/images/news/ana/ana.jpg",
   },
@@ -153,7 +160,7 @@ const newsData = [
     title: "Doğu Batı Apartmanları Noter Sözleşmesi",
     date: "8 Ekim 2024",
     paragraphs: [
-      "Doğu Batı Apartmanları için kat karşılığı noter sözleşmesi, Kalamış Wyndham Otel'de gerçekleştirilen bir toplantı ile imzalandı. Toplantı sırasında katılımcılara, projenin detayları ve  avantajları üzerine kapsamlı bir sunum yapıldı. Katılımcılar, projenin gelecekte bölgesine katacağı değeri ve Nova’nın üstlendiği vizyonu yakından inceleme fırsatı buldu. Bu anlamlı imza töreni Doğu Batı Apartmanları için yeni bir dönemin de başlangıcını simgeledi.",
+      "Doğu Batı Apartmanları için kat karşılığı noter sözleşmesi, Kalamış Wyndham Otel'de gerçekleştirilen bir toplantı ile imzalandı. Toplantı sırasında katılımcılara, projenin detayları ve avantajları üzerine kapsamlı bir sunum yapıldı. Katılımcılar, projenin gelecekte bölgesine katacağı değeri ve Nova’nın üstlendiği vizyonu yakından inceleme fırsatı buldu. Bu anlamlı imza töreni Doğu Batı Apartmanları için yeni bir dönemin de başlangıcını simgeledi.",
     ],
     photos1: [
       "assets/images/news/dogu-bati/kalamis1.jpg",
@@ -218,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentUrl = window.location.href;
 
     const whatsappLink = `https://wa.me/?text=${encodeURIComponent(
-      "NOVA'nın " + newsItem.title + " haberine göz atın. " + currentUrl
+      "NOVA'nın " + "\""+ newsItem.title +"\""+ " haberine göz atın. " + currentUrl
     )}`;
     // Get the container where you want to append the new element
     const socialContainer = document.getElementById("social-link");

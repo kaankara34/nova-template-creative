@@ -5,7 +5,7 @@ const projects = {
   1: {
     title: "Martı Residence",
     description:
-      "Bağdat Caddesi’nin en prestijli noktalarından biri olan Noter Sokak’ta yer alan Martı Residence, özgün mimarisi sayesinde, bölgesindeki en dikkat çeken yapıdır. Caddebostan Sahili ile Bağdat Caddesi’nin tam ortasında yer alan Martı Rezidans, denize yakın konumu sayesinde özellikle gün batımında içinizi ısıtacak bir manzaraya sahiptir. İmar kuralları gereği, önüne daha yüksek bir bina inşa edilemeyeceği için panaromik deniz manzarası asla kapanmayacaktır. Martı Rezidans, sakinlerine açık yüzme havuzu ve kapalı otopark gibi ayrıcalıklar da sunmaktadır.",
+      "Bağdat Caddesi’nin en prestijli noktalarından biri olan Noter Sokak’ta yer alan Martı Residence, özgün mimarisi sayesinde, bölgesindeki en dikkat çeken yapıdır. Caddebostan Sahili ile Bağdat Caddesi’nin tam ortasında yer alan Martı Residence, denize yakın konumu sayesinde özellikle gün batımında içinizi ısıtacak bir manzaraya sahiptir. İmar kuralları gereği, önüne daha yüksek bir bina inşa edilemeyeceği için panaromik deniz manzarası asla kapanmayacaktır. Martı Martı Residence, sakinlerine açık yüzme havuzu ve kapalı otopark gibi ayrıcalıklar da sunmaktadır.",
     arch: "Ömer Çamoğlu",
     year: "2019",
     floor: "12",
@@ -36,7 +36,7 @@ const projects = {
       "assets/images/marti/marti-lavabo2.webp",
       "assets/images/marti/marti-cati1.webp",
     ],
-    ozellikler: ["Kapalı havuz", "Basket sahası", "24 saat güvenlik"],
+    ozellikler: ["Açık havuz", "Fitness Merkezi", "Güvenlik", "Kapalı Otopark", "Kişisel Depolar", "Tam Kapasite Jeneratör",],
   },
   2: {
     title: "Bahar Residence",
@@ -55,7 +55,7 @@ const projects = {
       "assets/images/bahar/bahar-peyzaj2.JPG",
       "assets/images/bahar/bahar-peyzaj3.JPG",
     ],
-    ozellikler: ["Kapalı havuz", "Basket sahası", "24 saat güvenlik"],
+    ozellikler: ["Güvenlik", "Kapalı Otopark", "Kişisel Depolar", "Tam Kapasite Jeneratör",],
   },
   3: {
     title: "Mehtap Residence",
@@ -69,7 +69,7 @@ const projects = {
       "assets/images/mehtap/mehtap-render.jpg",
       "assets/images/mehtap/mehtap-render2.jpg",
     ],
-    ozellikler: ["Kapalı havuz", "Basket sahası", "24 saat güvenlik"],
+    ozellikler: ["Fitness Merkezi", "Güvenlik", "Kapalı Otopark", "Kişisel Depolar", "Tam Kapasite Jeneratör","Toplantı Odası"],
   },
   4: {
     title: "Mercan Bosphorus",
@@ -94,7 +94,7 @@ const projects = {
       "assets/images/mercan/mercan-kapali-havuz.jpg",
       "assets/images/mercan/mercan-park.jpg",
     ],
-    ozellikler: ["Kapalı havuz", "Basket sahası", "24 saat güvenlik"],
+    ozellikler: ["Açık havuz","Kapalı Havuz","Sauna, Buhar Odaları ve Hamam","Basketbol Sahası","Tenis Kortu", "Fitness Merkezi", "Güvenlik", "Kapalı Otopark", "Kişisel Depolar", "Tam Kapasite Jeneratör",],
   },
   5: {
     title: "Doğan Apartmanı",
@@ -110,7 +110,6 @@ const projects = {
       "assets/images/dogan/dogan-cephe4.jpeg",
       "assets/images/dogan/dogan-cephe5.jpeg",
     ],
-    ozellikler: ["Kapalı havuz", "Basket sahası", "24 saat güvenlik"],
   },
   6: {
     title: "Falcon Plaza",
@@ -120,7 +119,7 @@ const projects = {
     field: "4000",
     floor: 8,
     images: ["assets/images/falcon/plaza/falcon-plaza.jpeg"],
-    ozellikler: ["Kapalı havuz", "Basket sahası", "24 saat güvenlik"],
+    
   },
   7: {
     title: "Falcon Lojistik Binası",
@@ -133,7 +132,7 @@ const projects = {
       "assets/images/falcon/lojistik/falcon-lojistik-cephe.jpeg",
       "assets/images/falcon/lojistik/falcon-lojistik.jpeg",
     ],
-    ozellikler: ["Kapalı havuz", "Basket sahası", "24 saat güvenlik"],
+   
   },
   8: {
     title: "Gebze OSB Yönetim Binası",
@@ -144,7 +143,7 @@ const projects = {
       "assets/images/gebze-osb/osb-render.jpg",
       "assets/images/gebze-osb/osb1.jpg",
     ],
-    ozellikler: ["Kapalı havuz", "Basket sahası", "24 saat güvenlik"],
+    
   },
   9: {
     title: "Konelsis Center",
@@ -153,7 +152,6 @@ const projects = {
     year: "2023",
     field: "6500",
     images: ["assets/images/konelsis/konelsis-render.jpeg"],
-    ozellikler: ["Kapalı havuz", "Basket sahası", "24 saat güvenlik"],
   },
 };
 // Proje sıralaması dizisi
@@ -294,6 +292,10 @@ function loadProjectDetails() {
 
     // Eğer projede özellikler varsa bunları listele
     if (project.ozellikler && project.ozellikler.length > 0) {
+      const h6Element = document.createElement("h6");
+h6Element.className = "text-uppercase"; // class ekle
+h6Element.textContent = "Proje Detayları"; // Metni ayarla
+ozelliklerListesi.parentNode.insertBefore(h6Element, ozelliklerListesi);
       project.ozellikler.forEach((ozellik) => {
         const li = document.createElement("li");
         li.textContent = ozellik;
