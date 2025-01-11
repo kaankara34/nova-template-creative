@@ -1,6 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap");
 
 /* TABLE OF CONTENTS
 	1. Global
@@ -84,11 +83,11 @@ body {
   padding: 0;
   overflow: visible;
   height: auto !important;
-  font-size: 18px;
+  font-size: 14px;
   color: #1b252e;
-  font-family: "SF Pro Display", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
@@ -129,7 +128,7 @@ img {
 input,
 textarea,
 button {
-  font-family: "SF Pro Display", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 label {
@@ -460,7 +459,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  font-family: "SF Pro Display", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   margin-bottom: 15px;
   color: #000;
@@ -790,7 +789,7 @@ label,
 legend {
   display: block;
   padding-bottom: 20px;
-  font-family: "SF Pro Display", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 fieldset {
@@ -1789,13 +1788,13 @@ button>span,
 .onovo-social-1 ul li a {
   position: relative;
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #3e3e3e;
   border-radius: 70px;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 700;
   color: #666;
   transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
@@ -3098,6 +3097,14 @@ a.onovo-menu-btn,
 }
 
 @media (max-width: 767px) {
+  .onovo-logo-image {
+    width: 140px;
+  }
+
+  .onovo-header {
+    padding: 5px 0;
+  }
+
   .onovo-menu {
     padding-left: 40px;
   }
@@ -3160,15 +3167,84 @@ a.onovo-menu-btn,
 /*---
 	3. Footer
 ---*/
-.footer-img {
 
-  height: 100px;
-  width: 120px;
+.policies {
+  color: #fff;
+  font-size: 13px;
+
+
+  display: flex;
+  justify-content: center;
+  /* Yatayda ortalar */
+  align-items: center;
+  /* Dikeyde hizalar */
+  gap: 5px !important;
+  /* Öğeler arası boşluğu küçültür */
+  text-align: center;
+  /* Metin ortalanır */
+
+}
+
+.self-policy a {
+  text-decoration: underline;
+  color: white;
+}
+
+.download-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  /* Ana renk */
+  color: white;
+  padding: 12px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-button:hover {
+
+  /* Hover rengi */
+  transform: translateY(-3px);
+}
+
+.download-button:active {
+  transform: translateY(1px);
+}
+
+.download-icon {
+  width: 20px;
+  /* İkon genişliği */
+  height: 20px;
+  /* İkon yüksekliği */
+  margin-right: 12px;
+  /* İkon ve metin arasındaki boşluk */
+  object-fit: contain;
+  /* İkonun orantılı görünmesini sağlar */
+}
+
+.footer-img {
+  height: 120px;
+  width: 100%;
   object-fit: cover;
   object-position: top;
 }
 
-
+.gallery-item-spe {
+  height: 100%;
+  margin: 0;
+}
 
 .footer--fixed .onovo-footer,
 .footer--sticky .onovo-footer {
@@ -3196,13 +3272,14 @@ a.onovo-menu-btn,
 }
 
 .onovo-footer .copyright {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 
 .onovo-footer .separator {
   margin: 60px 0 30px 0;
   border-top: 7px solid transparent;
+  color: #ffffff;
   background-image: url("../images/fline.svg");
 }
 
@@ -3223,6 +3300,90 @@ ul.onovo-footer-menu li {
   text-transform: uppercase;
 }
 
+#footer-desc {
+  font-size: 15px;
+  margin-top: 0;
+}
+
+#footer-desc h5 {
+  font-size: 15px;
+
+}
+
+.flex-footer {
+
+  width: 100% !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+@media(max-width: 768px) {
+
+  .flex-footer {
+    flex-direction: column;
+
+  }
+
+  .policies {
+
+    font-size: 10px;
+
+
+
+  }
+
+
+}
+
+
+.custom-input {
+  width: 100%;
+  padding: 6px 15px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 16px;
+  border-radius: 4px;
+  /* Köşeleri yuvarlatır */
+  outline: none;
+  border: none;
+  transition: border 0.3s ease;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-input:focus {
+  border: 2px solid #e67e22;
+  /* Odaklanınca kenarlık rengi */
+}
+
+.custom-input:empty:before {
+  content: attr(data-placeholder);
+  color: #999;
+  font-size: 16px;
+}
+
+.newsletter-btn {
+  background-color: #549321;
+  color: white;
+  padding: 5px 5px !important;
+  text-align: center;
+
+  /* Yuvarlak köşeler */
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s ease;
+
+}
+
+.newsletter-btn:hover {
+  background-color: #e67e22;
+  /* Hover efekti */
+}
+
 @media (max-width: 1024px) {
 
   .onovo-footer .separator {
@@ -3232,12 +3393,9 @@ ul.onovo-footer-menu li {
 
 @media (max-width: 769px) {
 
-
-
-
-
-  .onovo-footer .copyright {
-    font-size: 16px;
+  .onovo-footer {
+    background-position: 39% 50%;
+    /* Arka planı sola hizala */
   }
 
   .onovo-footer ul.onovo-footer-menu li {
@@ -3245,7 +3403,7 @@ ul.onovo-footer-menu li {
   }
 
   .onovo-footer .footer--default {
-    padding: 140px 0 30px 0;
+    padding: 50px 0 30px 0;
   }
 
   .onovo-footer-lnk {
@@ -8288,7 +8446,7 @@ h4.onovo-title-3,
 h5.onovo-title-3,
 h6.onovo-title-3,
 .onovo-title-3 {
-  font-family: "SF Pro Display", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (min-width: 993px) {
@@ -8476,7 +8634,7 @@ textarea,
 button,
 label,
 legend {
-  font-family: "SF Pro Display", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html,
@@ -8486,7 +8644,15 @@ textarea,
 button,
 label,
 legend {
-  font-size: 18px;
+  font-size: 14px;
+}
+
+.terms {
+  font-size: 12px !important;
+}
+
+.terms-header {
+  font-size: 16px !important;
 }
 
 html,
@@ -8654,7 +8820,7 @@ input[type="submit"],
 body div.wpforms-container .wpforms-form .onovo-btn,
 body div.wpforms-container .wpforms-form button.onovo-btn,
 body div.wpforms-container .wpforms-form button.onovo-btn[type="submit"] {
-  font-family: "SF Pro Display", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a.onovo-btn,

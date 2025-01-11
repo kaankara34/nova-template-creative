@@ -72,7 +72,7 @@ const newsData = [
     date: "7 Nisan 2024",
     category: "Kentsel Dönüşüm",
     title: "Doğu ve Batı Apartmanları ile anlaşma sağlandı.",
-    image: "assets/images/news/dogu-bati/dogu-bati-tabela.jpg",
+    image: "assets/images/news/dogu-bati/dogu-bati-tabela.webp",
     readTime: "1 DAKİKA",
     summary:
       "Bağdat Caddesi kentsel dönüşüm projeleri kapsamında, Göztepe Mahallesi'nde bulunan Doğu ve Batı Apartmanları ile anlaşma sağlandı.",
@@ -102,7 +102,7 @@ const newsData = [
     date: "8 Ekim 2024",
     category: "Kentsel Dönüşüm",
     title: "Doğu Batı Apartmanları Noter Sözleşmesi",
-    image: "assets/images/news/dogu-bati/kalamis1.jpg",
+    image: "assets/images/news/dogu-bati/kalamis1.webp",
     readTime: "1 DAKİKA",
     summary:
       "Doğu Batı Apartmanları için kat karşılığı noter sözleşmesi Kalamış Wyndham Otel'de gerçekleştirilen bir toplantı ile imzalandı.",

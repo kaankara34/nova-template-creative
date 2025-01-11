@@ -1,0 +1,770 @@
+/*---
+	2. Header
+---*/
+.onovo-header {
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 19;
+}
+
+.onovo-header-default {
+  padding: 20px 0;
+}
+
+.admin-bar .onovo-header {
+  top: 32px;
+}
+
+.onovo-header.sticky {
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.header--white.onovo-header.sticky {
+  background-color: #000;
+}
+
+.onovo-header .row>div:first-child {
+  z-index: 2;
+}
+
+.slideUp {
+  position: fixed;
+  top: -140px;
+  left: 0;
+  width: 100%;
+}
+
+.slideDown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+}
+
+.slideUp,
+.slideDown {
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.onovo-logo {
+  padding: 0;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.onovo-logo:hover {
+  text-decoration: none;
+}
+
+.logo--large {
+  display: block;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.logo--small {
+  display: block;
+  font-size: 11px;
+  line-height: 1.18;
+  opacity: 0.6;
+}
+
+.header--white .logo--small,
+.header--white .logo--large {
+  color: #fff;
+}
+
+.onovo-logo-image {
+  position: relative;
+  line-height: 1;
+}
+
+.onovo-logo-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.onovo-logo-image img.logo--white,
+.header--white .onovo-logo-image img,
+.header--active .onovo-logo-image img {
+  display: none;
+}
+
+.header--white .onovo-logo-image img.logo--white,
+.header--active .onovo-logo-image img.logo--white {
+  display: block;
+}
+
+a.onovo-head-btn,
+.onovo-head-btn {
+  position: relative;
+  float: right;
+  height: 40px;
+}
+
+.onovo-head-btn::before,
+.onovo-head-btn::after {
+  display: none;
+}
+
+.header--white a.onovo-head-btn,
+.header--white .onovo-head-btn,
+.header--active a.onovo-head-btn,
+.header--active .onovo-head-btn {
+  color: #fff;
+}
+
+.header--active a.onovo-head-btn,
+.header--active .onovo-head-btn {
+  transition-delay: 0.6s;
+}
+
+.header--builder a.onovo-head-btn,
+.header--builder .onovo-head-btn {
+  display: inline-block;
+  float: none;
+}
+
+.header--white .onovo-head-btn .arrow::before,
+.header--active .onovo-head-btn .arrow::before {
+  background: #fff !important;
+}
+
+.header--active .onovo-head-btn .arrow::before {
+  transition-delay: 0.6s;
+}
+
+.onovo-head-btn .arrow span::before,
+.onovo-head-btn .arrow span::after {
+  background: #fff;
+}
+
+.header--white .onovo-head-btn .arrow span::before,
+.header--white .onovo-head-btn .arrow span::after,
+.header--active .onovo-head-btn .arrow span::before,
+.header--active .onovo-head-btn .arrow span::after {
+  background: #000;
+}
+
+.onovo-head-btn:hover .arrow span::before,
+.onovo-head-btn:hover .arrow span::after {
+  background: #000;
+}
+
+.header--active .onovo-head-btn .arrow span::before,
+.header--active .onovo-head-btn .arrow span::after {
+  transition-delay: 0.6s;
+}
+
+.onovo-menu-horizontal {
+  display: none;
+}
+
+.onovo-menu-horizontal ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 1024px) {
+  .onovo-menu-btn {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .onovo-menu-horizontal {
+    display: block;
+  }
+
+  .onovo-menu-horizontal+.onovo-menu-btn {
+    display: none;
+  }
+}
+
+.onovo-menu-horizontal ul li {
+  padding: 0 15px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 40px;
+  position: relative;
+}
+
+.header--white .onovo-menu-horizontal ul li,
+.header--white .onovo-menu-horizontal ul li a {
+  color: #fff;
+}
+
+.onovo-menu-horizontal ul li a {
+  font-weight: 500;
+}
+
+.onovo-menu-horizontal ul li i {
+  margin-left: 8px;
+  font-size: 0.8em;
+  transition: all 0.3s ease 0s;
+}
+
+.onovo-menu-horizontal ul li ul li:hover i {
+  transform: rotate(-90deg);
+}
+
+.onovo-menu-horizontal ul ul {
+  margin-left: -120px;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 240px;
+  background: #fff;
+  transform: translate(0, 30px);
+  -webkit-transform: translate(0, 30px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.onovo-menu-horizontal ul ul ul {
+  left: 100%;
+  margin-left: 0;
+}
+
+.onovo-menu-horizontal ul li:hover>ul {
+  transform: translate(0, 40px);
+  -webkit-transform: translate(0, 40px);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.onovo-menu-horizontal ul li:hover>ul ul {
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, -35px);
+}
+
+.onovo-menu-horizontal ul ul:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  border: 1px solid #000;
+}
+
+.onovo-menu-horizontal ul ul ul:before {
+  left: 0;
+}
+
+.onovo-menu-horizontal ul ul li {
+  margin: 15px 0;
+  padding: 0;
+  display: block;
+  line-height: normal;
+}
+
+.onovo-menu-horizontal ul ul li,
+.header--white .onovo-menu-horizontal ul ul li,
+.onovo-menu-horizontal ul ul li a,
+.header--white .onovo-menu-horizontal ul ul li a {
+  color: #000;
+}
+
+.onovo-menu-horizontal ul ul li a {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.onovo-header-default .onovo-menu-horizontal ul ul li {
+  text-align: center;
+}
+
+a.onovo-menu-btn,
+.onovo-menu-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 40px;
+  align-items: center;
+  z-index: 2;
+}
+
+.onovo-menu-btn span {
+  margin-top: -6px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 12px;
+  display: block;
+}
+
+.onovo-menu-btn span::before,
+.onovo-menu-btn span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.header--white .onovo-menu-btn span::before,
+.header--white .onovo-menu-btn span::after,
+.header--active .onovo-menu-btn span::before,
+.header--active .onovo-menu-btn span::after {
+  background: #fff;
+}
+
+.header--active .onovo-menu-btn span::before,
+.header--active .onovo-menu-btn span::after {
+  transition-delay: 0.6s;
+}
+
+.onovo-menu-btn span::after {
+  top: auto;
+  bottom: 0;
+}
+
+.onovo-menu-btn.btn--active span::before {
+  top: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.onovo-menu-btn.btn--active span::after {
+  bottom: 5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.onovo-menu-popup {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.onovo-menu-popup.menu--visible {
+  opacity: 1;
+  visibility: visible;
+  z-index: 0;
+}
+
+.onovo-menu-overlay,
+.onovo-menu-overlay-after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  background: #549321;
+  transform-origin: top center;
+  animation: onovo-menu-overlay-close 0.9s forwards cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.onovo-menu-overlay.overlay--circle,
+.onovo-menu-overlay-after.overlay--circle {
+  left: -25vw;
+  top: -25vw;
+  width: 150vw;
+  height: 150vw;
+  border-radius: 100%;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+}
+
+.onovo-menu-overlay-after {
+  background: #000;
+  animation: onovo-menu-overlay-close 0.6s forwards cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.onovo-menu-overlay-after.overlay--circle {
+  animation: onovo-menu-overlay-close-circle 1.2s forwards cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.onovo-menu-popup.menu--open .onovo-menu-overlay {
+  animation: onovo-menu-overlay-open 0.6s forwards cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.onovo-menu-popup.menu--open .onovo-menu-overlay-after {
+  animation: onovo-menu-overlay-open 0.6s forwards cubic-bezier(0.3, 0, 0.3, 1) 0.3s;
+}
+
+.onovo-menu-popup.menu--open .onovo-menu-overlay.overlay--circle {
+  animation: onovo-menu-overlay-open-circle 1.2s forwards cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.onovo-menu-popup.menu--open .onovo-menu-overlay-after.overlay--circle {
+  animation: onovo-menu-overlay-open-circle 1.2s forwards cubic-bezier(0.3, 0, 0.3, 1) 0.3s;
+}
+
+@keyframes onovo-menu-overlay-close {
+  0% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+  }
+}
+
+@keyframes onovo-menu-overlay-open {
+  0% {
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@keyframes onovo-menu-overlay-close-circle {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+}
+
+@keyframes onovo-menu-overlay-open-circle {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+.mfp-image img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.onovo-menu-container {
+  position: absolute;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  left: 0;
+  top: 140px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 140px);
+  -webkit-overflow-scrolling: touch;
+}
+
+.onovo-menu-container .container {
+  margin: auto;
+}
+
+.onovo-menu {
+  padding-left: 80px;
+}
+
+.onovo-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: onovo-menu-counter;
+}
+
+.onovo-menu ul.sub-menu {
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.onovo-menu .opened>ul.sub-menu {
+  max-height: 1000px;
+  transition: all 1.2s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: all 1.2s cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.onovo-menu ul li {
+  margin: 30px 0;
+  position: relative;
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 1;
+  counter-increment: onovo-menu-counter;
+  opacity: 0;
+  transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1);
+  transform-origin: top left;
+}
+
+.onovo-menu ul ul li {
+  font-size: 0.6em;
+}
+
+.onovo-menu ul li:nth-child(2) {
+  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+}
+
+.onovo-menu ul li:nth-child(3) {
+  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+}
+
+.onovo-menu ul li:nth-child(4) {
+  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+}
+
+.onovo-menu ul li:nth-child(5) {
+  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+}
+
+.onovo-menu ul li:nth-child(6) {
+  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+}
+
+.onovo-menu ul li:nth-child(7) {
+  transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s;
+}
+
+.onovo-menu ul li:nth-child(8) {
+  transition-delay: 0.7s;
+  -webkit-transition-delay: 0.7s;
+}
+
+.onovo-menu ul li:nth-child(9) {
+  transition-delay: 0.8s;
+  -webkit-transition-delay: 0.8s;
+}
+
+.onovo-menu ul li:nth-child(10) {
+  transition-delay: 0.9s;
+  -webkit-transition-delay: 0.9s;
+}
+
+.onovo-menu-popup.menu--ready .onovo-menu ul li {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+
+.onovo-menu ul li a {
+  position: relative;
+  color: #aeaeae;
+  transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.onovo-menu ul li a::before {
+  content: "0" counter(onovo-menu-counter) ".";
+  position: absolute;
+  left: -80px;
+  top: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #494949;
+}
+
+.onovo-menu ul ul a::before {
+  display: none;
+}
+
+.onovo-menu ul li a:hover {
+  color: #fff;
+}
+
+.onovo-menu ul li .icon {
+  margin-left: 15px;
+  position: relative;
+  top: 30px;
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 0.4em;
+  color: #aeaeae;
+  cursor: pointer;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.onovo-menu ul li.opened>.icon {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.onovo-header-default .onovo-menu {
+  text-align: left;
+}
+
+.onovo-menu ul li.current-menu-item>a:after {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media (max-width: 1024px) {
+  .onovo-header-default .onovo-menu ul li {
+    font-size: 48px;
+  }
+
+  .onovo-header-default .onovo-menu ul ul li {
+    font-size: 30px;
+  }
+
+  .onovo-header-default .onovo-menu ul ul ul li {
+    font-size: 22px;
+  }
+
+  .onovo-header-default .onovo-menu ul li .icon {
+    margin-top: 8px;
+    top: 0;
+  }
+
+  .onovo-header-default .onovo-menu ul li li .icon,
+  .onovo-menu ul li li .icon {
+    font-size: 20px;
+    margin-top: -2px;
+  }
+
+  .onovo-menu ul.sub-menu ul.sub-menu {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .onovo-menu ul.sub-menu .opened ul.sub-menu {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .onovo-logo-image {
+    width: 140px;
+  }
+
+  .onovo-header {
+    padding: 5px 0;
+  }
+
+  .onovo-menu {
+    padding-left: 40px;
+  }
+
+  .onovo-menu ul li {
+    margin: 20px 0;
+    font-size: 38px;
+  }
+
+  .onovo-menu ul li a::before {
+    left: -40px;
+    top: 10px;
+    font-size: 12px;
+  }
+
+  .onovo-menu ul li .icon {
+    margin-left: 8px;
+    margin-top: 4px;
+    top: 0;
+  }
+
+  .onovo-header-default .onovo-menu ul li {
+    font-size: 28px;
+  }
+
+  .onovo-header-default .onovo-menu ul ul li {
+    font-size: 18px;
+  }
+
+  .onovo-header-default .onovo-menu ul ul ul li {
+    font-size: 16px;
+  }
+
+  .onovo-header-default .onovo-menu ul li .icon {
+    margin-top: -2px;
+  }
+
+  .onovo-header-default .onovo-menu ul li li .icon,
+  .onovo-menu ul li li .icon {
+    font-size: 14px;
+    margin-top: -2px;
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .onovo-header-default>.container>.row>* {
+    max-width: 50%;
+    width: 50%;
+  }
+
+  .onovo-menu>ul>li>a {
+    color: #fff;
+  }
+
+  .onovo-menu ul.sub-menu .opened ul.sub-menu {
+    margin-top: 5px;
+  }
+}

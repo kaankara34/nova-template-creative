@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  /* Siyahımsı katman */
+  z-index: 1;
+  /* Yazıların altında kalsın */
+}
+
+#slide-1 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spacer {
+  height: 500vh;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  /* Yazı rengini belirle */
+  font-size: 1.5rem;
+  /* Yazı boyutunu ayarla */
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  /* Hafif beyaz parıltı */
+  /* Hafif parlama */
+  /* Yazıyı arka planda okunaklı yap */
+  z-index: 2;
+  /* Resimlerin üstünde göster */
+  width: 80%;
+  /* Uzun metinler için genişlik sınırı */
+}
+
+/* Scroll Indicator (Minimalist Ok) */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  z-index: 10;
+  /* Slide üzerinde görünmesi için */
+}
+
+.scroll-arrow {
+  width: 20px;
+  height: 20px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  transform: rotate(45deg);
+  animation: bounce 2s infinite;
+  opacity: 0.7;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  50% {
+    transform: translateY(10px) rotate(45deg);
+  }
+}
+
+.minimal-footer {
+  position: absolute;
+  /* Footer'ı sliderların içine yerleştirir */
+  bottom: 0;
+  /* Sliderın en altına yapıştırır */
+  left: 0;
+  width: 100%;
+  color: #fff;
+  /* Beyaz yazı rengi */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  z-index: 10;
+  /* Slide görsellerinin üzerinde gözükmesini sağlar */
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.footer-left small {
+  margin-top: 0.1rem;
+  display: block;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.footer-right a {
+  margin-left: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: #549222;
+  /* Sosyal medya ikonlarının hover rengi */
+}
+
+
+
+@media (max-width: 480px) {
+
+  .minimal-footer {
+
+    padding-bottom: 2rem;
+  }
+
+  .slide-text {
+    font-size: 1.3rem;
+  }
+
+  .minimal-footer {
+    justify-content: space-between;
+  }
+
+  .footer-left p {
+
+    font-size: 0.7rem;
+  }
+
+  .footer-left small {
+
+    font-size: 0.7rem;
+
+  }
+
+  .footer-right a {
+    margin-left: 0.6rem;
+    font-size: 0.7rem;
+  }
+
+
+
+}
+
+@media (max-width: 390px) {
+
+  .footer-left p {
+    font-size: 11px;
+  }
+
+  .footer-left small {
+    font-size: 9px;
+  }
+
+  .footer-right a {
+    margin-left: 0.8rem;
+    font-size: 0.6rem;
+  }
+
+}

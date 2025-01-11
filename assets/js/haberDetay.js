@@ -134,7 +134,7 @@ const newsData = [
       text: "Kadıköy bölgesinde tek bir binanın malikleri bile anlaşmakta zorluk çekerken, 46 adet malik, iki ayrı bağımsız parselde kentsel dönüşüm bilinci ile hareket ederek NOVA A.Ş ile anlaştı. NOVA A.Ş olarak bize duydukları güvenden dolayı teşekkür ediyoruz.",
       author: "- NOVA A.Ş. Yönetim Kurulu Başkanı Osman Kara",
     },
-    postPhoto: "assets/images/news/dogu-bati/dogu-bati-tabela.jpg",
+    postPhoto: "assets/images/news/dogu-bati/dogu-bati-tabela.webp",
     
   },
   {
@@ -163,16 +163,16 @@ const newsData = [
       "Doğu Batı Apartmanları için kat karşılığı noter sözleşmesi, Kalamış Wyndham Otel'de gerçekleştirilen bir toplantı ile imzalandı. Toplantı sırasında katılımcılara, projenin detayları ve avantajları üzerine kapsamlı bir sunum yapıldı. Katılımcılar, projenin gelecekte bölgesine katacağı değeri ve Nova’nın üstlendiği vizyonu yakından inceleme fırsatı buldu. Bu anlamlı imza töreni Doğu Batı Apartmanları için yeni bir dönemin de başlangıcını simgeledi.",
     ],
     photos1: [
-      "assets/images/news/dogu-bati/kalamis1.jpg",
-      "assets/images/news/dogu-bati/kalamis2.jpg",
-      "assets/images/news/dogu-bati/kalamis3.jpg",
-      "assets/images/news/dogu-bati/kalamis4.jpg",
-      "assets/images/news/dogu-bati/kalamis5.jpg",
-      "assets/images/news/dogu-bati/kalamis6.jpg",
+      "assets/images/news/dogu-bati/kalamis1.webp",
+      "assets/images/news/dogu-bati/kalamis2.webp",
+      "assets/images/news/dogu-bati/kalamis3.webp",
+      "assets/images/news/dogu-bati/kalamis4.webp",
+      "assets/images/news/dogu-bati/kalamis5.webp",
+      "assets/images/news/dogu-bati/kalamis6.webp",
 
-      "assets/images/news/dogu-bati/kalamis7.jpg",
+      "assets/images/news/dogu-bati/kalamis7.webp",
     ],
-    postPhoto: "assets/images/news/dogu-bati/kalamis1.jpg",
+    postPhoto: "assets/images/news/dogu-bati/kalamis1.webp",
   },
   // Diğer haberler buraya eklenecek
 ];
