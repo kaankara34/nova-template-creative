@@ -2269,6 +2269,19 @@ button>span,
 /*--------------------------------------------------
 	03. Page Preloader
 ---------------------------------------------------*/
+.inner {
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
 
 .disable-ajaxload .preloader-wrap {
   display: none;
@@ -2395,18 +2408,48 @@ button>span,
   color: #fff;
 }
 
-.inner {
-  display: table-cell;
-  vertical-align: middle;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+@media only screen and (max-width: 1466px) {
+  .preloader-intro {
+    font-size: 11vw;
+    line-height: 14vw;
+    height: 14vw;
+  }
 }
 
-.outer {
-  display: table;
-  width: 100%;
-  height: 100%;
+@media only screen and (max-width: 1024px) {
+  .preloader-intro {
+    font-size: 12vw;
+    line-height: 16vw;
+    height: 16vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .preloader-intro {
+    font-size: 13vw;
+    line-height: 17vw;
+    height: 17vw;
+  }
+
+  .percentage-intro {
+
+    left: 20px;
+
+  }
+
+  .percentage-wrapper {
+
+    right: 20px;
+
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .preloader-intro {
+    font-size: 14vw;
+    line-height: 18vw;
+    height: 18vw;
+  }
 }
 
 /*---
